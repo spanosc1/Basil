@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Online Order</title>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<nav class="navbar navbar-default">
+	  <div class="container-fluid">
+	    <!-- Brand and toggle get grouped for better mobile display -->
+	    <div class="navbar-header">
+	      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+	        <span class="sr-only">Toggle navigation</span>
+	        <span class="icon-bar"></span>
+	        <span class="icon-bar"></span>
+	        <span class="icon-bar"></span>
+	      </button>
+	      <a class="navbar-brand" href="index">Sweet Basil Pizzeria</a>
+	    </div>
+	    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+	      <form class="navbar-form navbar-left">
+	        <div class="form-group">
+	          <input type="text" class="form-control" placeholder="Search">
+	        </div>
+	        <button type="submit" class="btn btn-default">Submit</button>
+	      </form>
+	      <ul class="nav navbar-nav navbar-right">
+	        <li><a href="#">Sign In/Sign Up</a></li>
+	      </ul>
+	    </div><!-- /.navbar-collapse -->
+	  </div><!-- /.container-fluid -->
+	</nav>
+	<div class="container">
+		<div class="row">
+			<div class="col-md-2" type="menu" id="sections">
+				<ul class="nav nav-pills nav-stacked">
+				  <li class="active"><a data-toggle="pill" href="#pizza">Pizza</a></li>
+				  <li><a data-toggle="pill" href="#steaks">Steaks</a></li>
+				  <li><a data-toggle="pill" href="#pasta">Pasta</a></li>
+				  <li><a data-toggle="pill" href="#entree">Entree</a></li>
+				  <li><a data-toggle="pill" href="#slices">Slices</a></li>
+				  <li><a data-toggle="pill" href="#salads">Salads</a></li>
+				  <li><a data-toggle="pill" href="#appetizers">Appetizers</a></li>
+				  <li><a data-toggle="pill" href="#burgers">Burgers</a></li>
+				  <li><a data-toggle="pill" href="#wraps">Wraps</a></li>
+				  <li><a data-toggle="pill" href="#rolls">Rolls</a></li>
+				  <li><a data-toggle="pill" href="#paninis">Paninis</a></li>
+				  <li><a data-toggle="pill" href="#sandwiches">Sandwiches</a></li>
+				  <li><a data-toggle="pill" href="#calzones">Calzones</a></li>
+				  <li><a data-toggle="pill" href="#desserts">Desserts</a></li>
+				  <li><a data-toggle="pill" href="#drinks">Drinks</a></li>
+				</ul>
+			</div>
+			<div class="col-md-7" type="menu" id="menu">
+				<div class="row">
+					<div class="col-md-6">
+						<div class="tab-content">
+						  <div id="pizza" class="tab-pane fade in active">
+						    <ul class="nav nav-pills nav-stacked">
+							  <li><a data-toggle="pill" href="#optionsCheesePizza"><h3>Cheese</h3><p>Original, Pizza Sauce and Pizza Cheese.</p></a></li>
+							</ul>
+						  </div>
+						  <div id="steaks" class="tab-pane fade">
+						    <h3>Plain</h3>
+						    <p>Sub Roll.</p>
+						  </div>
+						  <div id="pasta" class="tab-pane fade">
+						    <h3>Pasta w/Sauce</h3>
+						    <p>Marinara.</p>
+						  </div>
+						  <div id="entree" class="tab-pane fade">
+						    <h3>Eggplant Parm</h3>
+						    <p>Cheese and Sauce.</p>
+						  </div>
+						  <div id="slices" class="tab-pane fade">
+						    <h3>Regular</h3>
+						    <p></p>
+						  </div>
+						  <div id="salads" class="tab-pane fade">
+						    <h3>House</h3>
+						    <p>Lettuce, Tomatoes, Cucumber, Onion and Olives</p>
+						  </div>
+						  <div id="appetizers" class="tab-pane fade">
+						    <h3>Mozzarella Sticks</h3>
+						    <p>Marinara</p>
+						  </div>
+						  <div id="burgers" class="tab-pane fade">
+						    <h3>Hamburgers</h3>
+						    <p>Bun.</p>
+						  </div>
+						  <div id="wraps" class="tab-pane fade">
+						    <h3>Chicken Caesar</h3>
+						    <p>Croutons, Lettuce, Tomato and Caesar.</p>
+						  </div>
+						  <div id="rolls" class="tab-pane fade">
+						    <h3>Chicken</h3>
+						    <p></p>
+						  </div>
+						  <div id="paninis" class="tab-pane fade">
+						    <h3>Gr Chicken</h3>
+						    <p>Mozzarella, Basil Pesto, Roasted Peppers, Arugula and Grilled Chicken.</p>
+						  </div>
+						  <div id="sandwiches" class="tab-pane fade">
+						    <h3>Gr Chicken</h3>
+						    <p>Mozarella and Roasted Peppers.</p>
+						  </div>
+						  <div id="calzones" class="tab-pane fade">
+						    <h3>Fried</h3>
+						    <p>Ricotta and Mozzarella.</p>
+						  </div>
+						  <div id="desserts" class="tab-pane fade">
+						    <h3>Cannoli</h3>
+						    <p></p>
+						  </div>
+						  <div id="drinks" class="tab-pane fade">
+						    <h3>Sm Fountain</h3>
+						    <p></p>
+						  </div>
+						</div>
+					</div>
+					<div class="col-md-6">
+						<div id="optionsCheesePizza" class="tab-pane fade">
+						    <h4>Cheese Pizza</h4>						  
+						    <div class="form-group">
+							  <label class="radio-inline"><input type="radio" name="optradio">14"</label>
+								<label class="radio-inline"><input type="radio" name="optradio">16"</label>
+								<label class="radio-inline"><input type="radio" name="optradio">Deep Dish</label>
+								<br>
+								<label for="numCheesePizza">Quantity:</label>
+								<select class="form-control" id="numCheesePizza">
+								  <option value="1">1</option>
+								  <option value="2">2</option>
+								  <option value="3">3</option>
+								  <option value="4">4</option>
+								  <option value="5">5</option>
+								  <option value="6">6</option>
+								  <option value="7">7</option>
+								  <option value="8">8</option>
+								  <option value="9">9</option>
+								</select>
+								<label for="comment">Comment:</label>
+								<textarea class="form-control" rows="5" id="comment"></textarea>
+							</div>
+						 </div>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-3" type="menu" id="yourOrder">
+				<h3 id="titleOrder">Your Order</h3>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

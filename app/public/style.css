@@ -1,0 +1,15 @@
+div[type='menu']#menu {
+	background-color: #e6e8ed;
+	padding: 0px;
+}
+div[type='menu']#sections, #yourOrder {
+	border-width: 2px;
+	border-color: #337ab7;
+	border-style: solid;
+	padding: 0px;
+	border-radius: 7px;
+}
+
+#titleOrder {
+	text-align: center;
+}
