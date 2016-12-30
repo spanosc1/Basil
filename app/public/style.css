@@ -13,3 +13,26 @@ div[type='menu']#sections, #yourOrder {
 #titleOrder {
 	text-align: center;
 }
+
+hr {
+	display: block;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+    margin-left: auto;
+    margin-right: auto;
+    border-width: 1px;
+    border-color: #337ab7;
+}
+
+h5 {
+	font-weight: bold;
+}
+
+label.checkbox-inline {
+	top: -10px;
+}
+
+#pizza, #optionsPizza, #yourOrder {
+	height: 630px;
+	overflow-y: auto;
+}
