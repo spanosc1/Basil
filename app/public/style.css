@@ -6,8 +6,11 @@ div[type='menu']#sections, #yourOrder {
 	border-width: 2px;
 	border-color: #337ab7;
 	border-style: solid;
-	padding: 0px;
 	border-radius: 7px;
+}
+
+div[type='menu']#sections {
+	padding: 0px;
 }
 
 #titleOrder {
@@ -35,4 +38,8 @@ label.checkbox-inline {
 #pizza, #optionsPizza, #yourOrder {
 	height: 630px;
 	overflow-y: auto;
+}
+
+button[type='button']#addButton {
+	float: left;
 }
