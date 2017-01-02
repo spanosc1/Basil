@@ -146,7 +146,7 @@
 					</div>
 					<div class="col-md-8">
 						<div id="optionsPizza" class="tab-pane fade">
-						  <h4>Cheese</h4>						  
+						  <h4 id="thisItem"></h4>						  
 						  <form class="form-group" id="pizzaForm">
 						  	<label class="radio-inline"><input type="radio" name="sizePizza" value="14" checked="">14"</label>
 								<label class="radio-inline"><input type="radio" name="sizePizza" value="16">16"</label>
@@ -1254,14 +1254,23 @@
 			//Comment is always 179th in the form
 			pizza.comment = Form[0][179].value
 			order.push(pizza);
-			console.log(order);
-			var html = '<div class="card card-block"><h4 class="card-title">' + pizza.type + '</h4><p class="card-text">' + pizza.toppings + '</p><a href="#" class="btn btn-primary">Edit</a></div>';
+			var html = '<div class="card card-block"><h4 class="card-title">' + pizza.type + '</h4><p class="card-text">full: ' + pizza.toppings + '<br>left: ' + pizza.toppingsLeft + '<br>right: ' + pizza.toppingsRight + '</p><a href="#" onClick="removeItem" class="btn btn-primary">Remove</a></div>';
 			$("#yourOrder").append(html);
+			console.log(pizza);
+			Form.length = 0;
+			pizza.toppings.length = 0;
+			pizza.toppingsLeft.length = 0;
+			pizza.toppingsRight.length = 0;
+			Checked.length = 0;
+			Amounts.length = 0;
+			Placements.length = 0;
+			changed = false;
 		}
 		//Set the type of pizza selected by the user
 		$(".pizzaType").on('click', function() {
 			currentItem = $(this).get(0).attributes[3].value;
 			pizza.type = currentItem;
+			$("#thisItem").text(currentItem);
 		});
 		//Unchecks checkboxes in same name group if another is selected (ex. user picks left pepperoni, then changes to all)
 		$("input:checkbox").on('click', function() {
@@ -1274,6 +1283,7 @@
 		  else {
 		    $box.prop("checked", false);
 		  }
+		  changed = true;
 		});
 	</script>
 </body>

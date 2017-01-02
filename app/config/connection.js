@@ -3,7 +3,7 @@
 // *********************************************************************************
 
 // Dependencies
-var Sequelize = require("sequelize");
+/*var Sequelize = require("sequelize");
 
 // Lists out connection options
 var source = {
@@ -35,4 +35,4 @@ var sequelize = new Sequelize('dnd', 'root', '13748abc', {
 });
 
 // Exports the connection for other files to use
-module.exports = sequelize;
+module.exports = sequelize;*/
