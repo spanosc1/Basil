@@ -35,11 +35,11 @@ label.checkbox-inline {
 	top: -10px;
 }
 
-#pizza, #optionsPizza, #yourOrder {
+.expandedMenu, #optionsPizza, #optionsSteak, #yourOrder {
 	height: 630px;
 	overflow-y: auto;
 }
 
-button[type='button']#addButton {
-	float: left;
+button[type='button'] {
+	float: right;
 }
