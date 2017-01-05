@@ -10,15 +10,15 @@ var menu = require('../data/menu.json');
 
 module.exports = function(app){
 	app.get('/', function(req, res){
-		res.sendFile(path.join(__dirname + '/../public/order/html'))
+		res.sendFile(path.join(__dirname + '/../public/html/index.html'))
 	});
 	app.get('/order', function(req, res){
-		res.sendFile(path.join(__dirname + '/../public/order.html'));
+		res.sendFile(path.join(__dirname + '/../public/html/order.html'));
 	});
 	app.get('/order/menu', function(req, res){
 		res.json(menu);
 	});
 	app.use(function(req, res){
-		res.sendFile(path.join(__dirname + '/../public/index.html'));
+		res.sendFile(path.join(__dirname + '/../public/html/index.html'));
 	});
 }

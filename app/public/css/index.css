@@ -1,0 +1,1428 @@
+/*********** BODY & HTML ***********/
+html {
+}
+ 
+body {
+}
+ 
+/* headers */
+.container h1 {
+    font-family: 'Roboto Slab', serif;
+    font-size: 55px;
+}
+ 
+.container h2 {
+    font-family: 'Roboto Slab', serif;
+}
+
+.container h3 {
+    font-family: 'Petit Formal Script', cursive;
+}
+ 
+.container h4 {
+    font-family: 'Petit Formal Script', cursive;
+}
+ 
+.container p {
+    font-family: 'Roboto Slab', serif;
+}
+
+/* border under */
+.container #Bord { 
+   width: 400px;
+   margin: auto;
+   border-bottom: 2px solid black;
+}
+   
+/* header animation alteration */
+.container #Head.animation-element.slide-down.in-view {
+    transition-delay: 200ms;
+}
+
+.container #Bord.animation-element.slide-up.in-view { 
+   transition-delay: 200ms;
+}
+
+
+/*********** PRELOADER SCREEN ***********/
+#PreLoader {
+    position:fixed;
+    top:0;  
+    left:0;
+    right:0;
+    bottom:0;
+    z-index: 99; 
+    background-color: white;
+}
+
+/* pre load text */
+#PreLoader #PreLoadText {
+    width: 100%;
+    text-align: center;
+}
+
+#PreLoader #PreLoadText h2 {
+    margin-top: 100px;
+    margin-bottom: -100px;
+    font-family: 'Roboto Slab', serif;
+    font-variant: small-caps;
+    font-weight: bold;
+    font-size: 45px;
+    letter-spacing: 4px;
+}
+
+/* background image */
+#PreLoader #Background {
+    height: 500px;
+    width: 500px;
+    margin: 50px auto;
+    background-image: url("/Welcome/Preload.png");
+    background-size: cover;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+}
+
+/* loader style */
+#PreLoader #Loader {
+  width: 180px;
+  height: 180px;
+  margin: auto;
+  position: relative;
+  top: 100px;
+}
+
+#PreLoader #Loader img {
+    margin-left: 50px;
+    margin-top: 50px;
+    height: 80px;
+    padding: 2px;
+    border: 3px solid black;
+    border-radius: 100%;
+    background-color: black;
+}
+
+/* spin function */
+#PreLoader #Loader  #Spinner.rotate {
+    -webkit-animation: spin 1.7s infinite linear;
+    animation: spin 1.7s infinite linear;
+}
+
+@-webkit-keyframes spin {
+    100% { -webkit-transform: rotate(360deg); }
+}
+@-moz-keyframes spin {
+    100% { -moz-transform: rotate(360deg); }
+}
+@keyframes spin {
+    100% {
+        -moz-transform:rotate(360deg);
+        -o-transform:rotate(360deg);
+        transform:rotate(360deg);
+    }
+}
+
+
+/******************** NAVIGATION BAR ********************/  
+#Navbar.hidden { 
+    visibility: hidden; 
+}
+
+.navbar .container-fluid {
+    background-color: white;
+    box-shadow: 0.5px 4px 4px black;
+}
+
+.navbar .navbar-nav { 
+   display: inline-block; 
+   float: none; 
+   vertical-align: top; 
+}
+
+.navbar .navbar-header .navbar-brand {
+    font-size: 0px;
+    color: transparent; 
+    margin-right: -20px;
+}
+
+.navbar .navbar-collapse { 
+   text-align: center;
+}
+
+.navbar div li { 
+   font-family: "Courier New";
+   font-size: 18px;
+   letter-spacing: 5px;
+   margin-right: 10px;
+   margin-left: 10px;
+   display: inline-block; 
+   float: none;
+   vertical-align: top; 
+   font-variant: small-caps;
+   font-weight: bold;
+   transition: 0.45s;
+}
+
+.navbar div li:hover {
+}
+
+.navbar div li img {
+    height: 60px;
+    padding: 5px;
+    margin-right: 5px;
+}
+
+
+/******************** WELCOME SECTION ********************/
+#WelcomeSection {
+    width: 100vw;
+    height: 100vh;
+    background-image: url("/Welcome/Homescreen.png");
+    background-position: 50% 50%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    border-bottom: 1px solid black;
+}  
+
+#WelcomeContainer {
+    text-align: center;
+    color: black;
+}
+
+/* hidden */ 
+#WelcomeContainer #Hidden {
+    visibility: hidden;
+}
+
+/* chalkboard */
+#WelcomeContainer #Chalkboard #Img {
+    /* position */
+    height: 580px;
+    width: 400px;
+    float: left;
+    /* background */
+    background-image: url("/Welcome/Chalkboard.jpeg");
+    background-size: cover;
+    background-position: 0px -210px;
+    /* style */
+    border: 3px solid black;
+    box-shadow: 0.1px 4px 4px black;
+    color: white;
+}
+
+/* header */
+#WelcomeContainer #Chalkboard #Img #Sweet { 
+   margin-top: 80px;
+   padding-top: 5px;
+   padding-bottom: 5px;
+   font-weight: bold;
+   font-variant: small-caps;
+   font-size: 30px;
+}
+
+#WelcomeContainer #Chalkboard #Img #SBord {
+    border-bottom: 1px solid white;
+}
+
+#WelcomeContainer #Chalkboard #Img #SBP {
+    font-weight: bold;
+    font-size: 45px;
+    letter-spacing: 5px;
+    color: #DC6B2F;
+    -webkit-text-stroke: 1px solid white;
+}
+
+/* order section */
+#WelcomeContainer #Chalkboard #Img #Order {
+    height: 100px;
+    width: 320px;
+    margin-top: 20px;
+    margin-right: auto;
+    margin-left: auto;
+    border: 1px solid white;
+}
+
+#WelcomeContainer #Chalkboard #Img #Order #Btn {
+    width: 100px;
+    color: #DC6B2F;
+    background-color: #F3EED7;
+    border: 3px solid #DC6B2F;
+    border-radius: 0px;
+    outline: 1px solid white;
+    outline-offset: 3px;
+}
+
+#WelcomeContainer #Chalkboard #Img #Order #Btn h3 {
+    margin: auto;
+    display: inline-block;
+    position: relative;
+    top: 2px;
+    right: 8px;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+#WelcomeContainer #Chalkboard #Img #Order #Btn img {
+    margin: auto;
+    display: inline-block;
+    position: relative;
+    right: 4px;
+    height: 25px;
+}
+
+/* special section */
+#WelcomeContainer #Chalkboard #Img #LargePizza {
+    height: 100px;
+    width: 320px;
+    margin-top: 30px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+#WelcomeContainer #Chalkboard #Img #LargePizza h3 {
+    font-weight: bold;
+    color: #DC6B2F;
+}
+
+#WelcomeContainer #Chalkboard #Img #LargePizza #Large {
+   border-bottom: 1px solid white;
+}
+
+#WelcomeContainer #Chalkboard #Img #LargePizza p {
+    font-weight: normal;
+}
+
+/* location */
+#WelcomeContainer #Chalkboard #Img #Location {
+    height: 100px;
+    width: 320px;
+    margin: auto;
+    border: 3px solid #DC6B2F;
+    color: #DC6B2F;
+}
+
+#WelcomeContainer #Chalkboard #Img #Location #First {
+    margin-top: 13px;
+}
+
+#WelcomeContainer #Chalkboard #Img #Location p {
+    margin: auto;
+}
+
+/* par */
+#WelcomeContainer p {
+    font-size: 20px;
+    font-weight: bold;
+    font-variant: small-caps;
+}
+
+/******************** ABOUT SECTION ********************/
+#AboutSection {
+    width: 100%;
+    height: 880px;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    background-color: rgb(250,250,250);
+}  
+
+#AboutContainer {
+    width: 1350px;
+    margin-top: 50px;
+    text-align: center;
+}
+
+/* header */
+#AboutContainer #Header {
+    color: #DC6B2F;
+    word-spacing: 10px;
+}
+
+#AboutContainer #The {
+    font-family: 'Roboto Slab', serif;
+    font-variant: small-caps;
+    font-size: 40px;
+}
+
+#AboutContainer #SBP {
+    font-size: 60px;
+    font-family: 'Petit Formal Script', cursive;
+    -webkit-text-stroke: 1px black; 
+}
+
+#AboutContainer #Story {
+    font-variant: small-caps;
+    font-family: 'Roboto Slab', serif;
+    font-variant: small-caps;
+    font-size: 40px;
+}
+
+/* columns */
+#AboutContainer .col-md-6 {
+    margin-top: 100px;
+}
+
+/* col - one */
+#AboutContainer #FirstColumn {
+    width: 800px;
+}
+
+/* col - two */
+#AboutContainer #SecondColumn {
+    width: 450px;
+    height: 525px;
+    margin-left: 50px;
+    margin-top: 101px;
+    border: 1px solid black;
+    box-shadow: 0.1px 4px 4px black;
+}
+
+#AboutContainer #SecondColumn p {
+    padding-top: 13px;
+    padding-right: 3px;
+    padding-left: 3px;
+    text-align: justify;
+    line-height: 1.2;
+    font-size: 17.5px;
+    color: black;
+}
+
+/* carousel */ 
+#AboutContainer #Carousel {
+   height: 525px;
+   width: 800px;
+   float: left;
+   position: relative;
+   border: 5px solid #DC6B2F;
+   box-shadow: 0.1px 5px 5px black;
+   font-family: "Courier New";
+   color: black;
+}
+
+/* background image */
+#AboutContainer #Carousel #Image {
+    width: 100%;
+    height: 100%;
+    background-position: 50% 50%; 
+    background-size: cover;
+    padding-top: 20px;
+}
+
+#AboutContainer #Carousel #SlideOne #Image {
+   background-image: url("/About/Carousel/One.png");
+}
+
+#AboutContainer #Carousel #SlideTwo #Image {
+   background-image: url("/About/Carousel/Two.png");
+}
+
+#AboutContainer #Carousel #SlideThree #Image {
+   background-image: url("/About/Carousel/Three.png");
+}
+
+#AboutContainer #Carousel #SlideFour #Image {
+   background-image: url("/About/Carousel/Four.png");
+}
+
+#AboutContainer #Carousel #SlideFive #Image {
+   background-image: url("/About/Carousel/Five.png");
+}
+
+/* carousel text */
+#AboutContainer #Carousel h3 {
+   margin: auto;
+   font-weight: bold;
+}
+
+#AboutContainer #Carousel #Head {
+    border-bottom: 1px solid black;
+}
+
+#AboutContainer #Carousel p {
+    margin-top: 10px;
+    font-variant: small-caps
+}
+
+/* slide function */
+#SlideOne, #SlideTwo, #SlideThree, #SlideFour, #SlideFive {
+   position: absolute;
+   border: 1px solid black;
+   width: 100%;
+   height: 100%;
+}
+
+#SlideOne {
+   animation: fade 25s infinite;
+   -webkit-animation: fade 25s infinite;
+} 
+
+#SlideTwo {
+   animation: fade2 25s infinite;
+   -webkit-animation: fade2 25s infinite;
+}
+
+#SlideThree {
+   animation: fade3 25s infinite;
+   -webkit-animation: fade3 25s infinite;
+}
+
+#SlideFour {
+   animation: fade4 25s infinite;
+   -webkit-animation: fade4 25s infinite;
+}
+
+#SlideFive {
+   animation: fade5 25s infinite;
+   -webkit-animation: fade5 25s infinite;
+}
+
+
+@keyframes fade
+{
+   0% {opacity: .1}
+   10% {opacity: 1}
+   19%{opacity: 0}
+   20% {opacity: 0} 
+   30% {opacity: 0}
+   39% {opacity: 0}
+   40% {opacity: 0}
+   50% {opacity: 0}
+   59% {opacity: 0}
+   60% {opacity: 0}
+   70% {opacity: 0}
+   79% {opacity: 0}
+   80% {opacity: 0}
+   90% {opacity: 0}
+   99% {opacity: 0}
+   100% {opacity: .1}
+}
+
+@keyframes fade2
+{
+   0% {opacity: 0}
+   10% {opacity: 0}
+   19%{opacity: 0}
+   20% {opacity: .1} 
+   30% {opacity: 1}
+   39% {opacity: 0}
+   40% {opacity: 0}
+   50% {opacity: 0}
+   59% {opacity: 0}
+   60% {opacity: 0}
+   70% {opacity: 0}
+   79% {opacity: 0}
+   80% {opacity: 0}
+   90% {opacity: 0}
+   99% {opacity: 0}
+   100% {opacity: 0}
+}
+
+@keyframes fade3
+{
+   0% {opacity: 0}
+   10% {opacity: 0}
+   19%{opacity: 0}
+   20% {opacity: 0} 
+   30% {opacity: 0}
+   39% {opacity: 0}
+   40% {opacity: .1}
+   50% {opacity: 1}
+   59% {opacity: 0}
+   60% {opacity: 0}
+   70% {opacity: 0}
+   79% {opacity: 0}
+   80% {opacity: 0}
+   90% {opacity: 0}
+   99% {opacity: 0}
+   100% {opacity: 0}
+}
+
+@keyframes fade4
+{
+   0% {opacity: 0}
+   10% {opacity: 0}
+   19%{opacity: 0}
+   20% {opacity: 0} 
+   30% {opacity: 0}
+   39% {opacity: 0}
+   40% {opacity: 0}
+   50% {opacity: 0}
+   59% {opacity: 0}
+   60% {opacity: .1}
+   70% {opacity: 1}
+   79% {opacity: 0}
+   80% {opacity: 0}
+   90% {opacity: 0}
+   99% {opacity: 0}
+   100% {opacity: 0}
+}
+
+@keyframes fade5
+{
+   0% {opacity: 0}
+   10% {opacity: 0}
+   19% {opacity: 0}
+   20% {opacity: 0} 
+   30% {opacity: 0}
+   39% {opacity: 0}
+   40% {opacity: 0}
+   50% {opacity: 0}
+   59% {opacity: 0}
+   60% {opacity: 0}
+   70% {opacity: 0}
+   79% {opacity: 0}
+   80% {opacity: .1}
+   90% {opacity: 1}
+   99% {opacity: 0}
+   100% {opacity: 0}
+}
+
+/* animation adjustments */
+#AboutContainer #Carousel.animation-element.slide-up.in-view { 
+   transition-delay: 300ms; 
+}
+
+
+/******************** LARGE PIZ SECTION ********************/
+#LargePizzaSection {
+    width: 100%;
+    height: 600px;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    background-image: url("/Specialties/Special.jpeg");
+    background-position: 50% 50%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}  
+
+#LargePizzaContainer {
+    margin-top: 50px;
+    text-align: center;
+    color: black;
+    font-variant: small-caps;
+}
+
+/* chalkboard */
+#LargePizzaSection #Chalkboard {
+    width: 1000px;
+    margin: auto;
+    position: relative;
+    top: -50px;
+}
+
+#LargePizzaSection #Chalkboard #Img {
+    height: 547px;
+    width: 350px;
+    float: right;
+    background-image: url("/Specialties/Chalkboard.jpeg");
+    background-position: 0px -145px;
+    background-size: cover;
+    border-right: 3px solid black;
+    border-left: 3px solid black;
+    border-bottom: 3px solid black;
+    box-shadow: 0.1px 4px 4px black;
+}
+
+/* header */
+#LargePizzaSection #Chalkboard #Img #First {
+    width: 280px;
+    margin: 20px auto;
+    color: #DC6B2F;
+    font-size: 50px;
+    border-bottom: 3px solid white;
+}
+
+#LargePizzaSection #Chalkboard #Img #Second {
+    width: 260px;
+    margin-top: -10px;
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: 5px;
+    padding-bottom: 5px;
+    color: white;
+    letter-spacing: 5px;
+    border: 1px solid white;
+}
+
+/* statement */
+#LargePizzaSection #Chalkboard #Statement {
+    width: 280px;
+    margin-top: 35px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+#LargePizzaSection #Chalkboard #Statement #Third {
+    margin: auto;
+    color: #DC6B2F;
+    font-variant: normal;
+}
+
+#LargePizzaSection #Chalkboard #Statement #Fourth  {
+    margin: auto;
+    color: white;
+    font-size: 20px;
+}
+
+/* teaser */
+#LargePizzaSection #Chalkboard #Teaser {
+    width: 280px;
+    margin-top: 35px;
+    margin-right: auto;
+    margin-left: auto;
+    padding-top: 10px;
+    padding-right: 0px;
+    padding-left: 0px;
+    border: 1px solid #DC6B2F;
+}
+
+#LargePizzaSection #Chalkboard #Teaser #Fifth {
+    font-size: 18.5px;
+    color: #DC6B2F;
+}
+
+/* button */
+#LargePizzaSection #Chalkboard #DownBtn {
+    margin-top: -30px;
+}
+
+  
+/******************** SPECIAL SECTION ********************/
+#SpecialtiesSection {
+    width: 100%;
+    height: 800px;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    background-color: rgb(250,250,250);
+}  
+
+#SpecialtiesContainer {
+    width: 1350px;
+    margin-top: 50px;
+    text-align: center;
+    color: black;
+}
+
+/* header */
+#SpecialtiesContainer #Header {
+    letter-spacing: 1px;
+    word-spacing: 5px;
+    color: #DC6B2F;
+}
+
+#SpecialtiesContainer #Bord {
+    width: 1100px; 
+}
+
+#SpecialtiesContainer #Soon {
+    font-size: 35px; 
+    font-family: 'Petit Formal Script', cursive;
+}
+
+#SpecialtiesContainer #World {
+    font-size: 50px;
+    font-weight: bold;
+    font-variant: small-caps;
+}
+
+/* icons */ 
+#SpecialtiesContainer #Icons {
+    width: 100%; 
+    margin-top: 100px; 
+} 
+
+/* img */ 
+#SpecialtiesContainer #Icons .col-md-3 img {
+    width: 140px; 
+    height: 140px; 
+    padding: 2px; 
+    border: 1px solid black;
+    border-radius: 50%; 
+    background-color: black; 
+} 
+
+/* statement */ 
+#SpecialtiesContainer #Icons .col-md-3 #State { 
+    font-size: 25px; 
+    font-weight: bold;
+    color: #DC6B2F; 
+} 
+
+#SpecialtiesContainer #Icons .col-md-3 h3 { 
+    width: 300px; 
+    border-bottom: 3px solid black; 
+} 
+ 
+#SpecialtiesContainer #Icons .col-md-3 p { 
+    width: 260px;
+    height: 180px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: -10px; 
+    padding-top: 15px; 
+    padding-right: 10px; 
+    padding-left: 10px; 
+    text-align: justify; 
+    line-height: 1; 
+    font-size: 18px; 
+    border-bottom: 1px solid black;
+    border-right: 1px solid black;
+    border-left: 1px solid black;
+    
+} 
+
+/* animation alterations */
+#SpecialtiesContainer #Icons #ColOne #One.animation-element.slide-from-left.in-view {
+    transition-delay: 500ms;
+}
+
+#SpecialtiesContainer #Icons #ColTwo #Two.animation-element.slide-from-right.in-view {
+    transition-delay: 500ms;
+}
+
+#SpecialtiesContainer #Icons #ColThree #Three.animation-element.slide-from-left.in-view {
+    transition-delay: 500ms;
+}
+
+#SpecialtiesContainer #Icons #ColFour #Four.animation-element.slide-from-right.in-view {
+    transition-delay: 500ms;
+}
+
+#SpecialtiesContainer #Icons .col-md-3 #Caption.animation-element.slide-up.in-view {
+    transition-delay: 700ms;
+}
+
+
+/******************** MENU SECTION ********************/
+#MenuSection {
+    width: 100%;
+    height: 600px;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    background-image: url("/Menu/Background.png");
+    background-position: 50% 50%;
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+
+#MenuContainer {
+    text-align: center;
+}
+
+#MenuContainer #hidden {
+    visibility: hidden; 
+}
+
+/* chalkboard */
+#MenuContainer #Chalkboard {
+    margin: auto;
+}
+
+#MenuContainer #Chalkboard #Img {
+    height: 500px;
+    width: 400px;
+    float: left;
+    background-image: url("/Menu/Chalkboard.jpeg");
+    background-size: cover;
+    background-position: 0px -290px;
+    border-right: 3px solid black;
+    border-left: 3px solid black;
+    border-bottom: 3px solid black;
+    box-shadow: 0.1px 4px 4px black;
+}
+
+/* header */
+#MenuContainer #Chalkboard #First {
+    width: 320px;
+    margin: 15px auto;
+    color: #DC6B2F;
+    font-size: 50px;
+    letter-spacing: 5px;
+    border-bottom: 3px solid white;
+}
+
+/* statement */
+#MenuContainer #Chalkboard #Statement {
+    width: 320px;
+    margin: auto;
+    padding-top: 10px;
+    padding-right: 10px;
+    padding-left: 10px;
+    text-align: justify;
+    font-variant: small-caps;
+    font-size: 18px;
+    line-height: 1.2;
+    color: white;
+    border: 1px solid white;
+}
+
+/* teaser */
+#MenuContainer #Chalkboard #Teaser {
+    color: #DC6B2F;
+    font-size: 40px;
+}
+
+#MenuContainer #Chalkboard h3 {
+    margin: auto;
+    font-weight: bold;
+}
+
+#MenuContainer #Chalkboard #One {
+    margin-top: 20px;
+}
+
+/* button */
+#MenuContainer #Chalkboard #Button {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #777F7C;
+    border: 3px solid white;
+    outline: 1px solid white;
+    outline-offset: 5px;
+}
+
+#MenuContainer #Chalkboard #Button img {
+    height: 50px;
+}
+
+
+/******************** ORDER SECTION ********************/
+#OrderSection {
+    width: 100%;
+    height: 850px;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    background-color: rgb(250,250,250);
+}  
+
+#OrderContainer {
+    margin-top: 50px;
+    text-align: center;
+}
+
+/* header */
+#OrderContainer #Header {
+    color: black;
+    color: #DC6B2F;
+}
+
+#OrderContainer #Online {
+    font-family: 'Petit Formal Script', cursive;
+    font-size: 35px;
+}
+
+/* border under */
+#OrderContainer #Bord { 
+   width: 600px;
+}
+
+/* image */
+#OrderContainer #Image {
+    width: 1000px;
+    height: 400px;
+    margin: 130px auto;
+    background-image: url("/Order/Smart.png");
+    background-position: 50% 50%;
+    background-size: cover;
+}
+
+/* desktop text */
+#OrderContainer #Image #Teaser {
+    position: relative;
+    top: 40px;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+#OrderContainer #Image #TeaserTwo {
+    font-size: 20px;
+    position: relative; 
+    top: 20px;
+    font-weight: bold;
+}
+
+/* labtop button */
+#OrderContainer #Image #Button {
+    width: 261px;
+    height: 169px;
+    position: relative;
+    top: 84.5px;
+    right: 103.5px;
+    float: right;
+    border: 2px solid white;
+    background: linear-gradient( #DC6B2F, rgb(200,200,200));
+}
+
+#OrderContainer #Image #Button h2 {
+    color: black;
+    font-variant: small-caps;
+}
+
+/* ipad section */
+#OrderContainer #Ipad {
+    width: 132px;
+    height: 183px;
+    margin: auto;
+    position: relative;
+    top: 80px;
+    right: 321px;
+    border: 2px solid white;
+    background: linear-gradient( #DC6B2F, rgb(200,200,200));
+}
+
+#OrderContainer #Ipad h2 {
+    font-variant: small-caps;
+    font-size: 25px;
+    color: black;
+}
+
+#OrderContainer #Ipad #First {
+    margin-top: 40px;
+    letter-spacing: 10px;
+}
+
+#OrderContainer #Ipad #Border {
+    padding-left: 12px;
+    border-bottom: 1px solid black;
+    font-family: 'Petit Formal Script', cursive;
+    font-weight: bold;
+}
+
+/* animation alterations */
+#OrderContainer #Image.animation-element.slide-up.in-view {
+    transition-delay: 500ms;
+}
+
+
+/******************** STATEMENT SECTION ********************/
+#StatementSection {
+    width: 100%;
+    height: 700px;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    background-image: url("/Statement/Background.png");
+    background-position: 50% 50%; 
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}  
+
+#StatementContainer {
+    margin-top: 150px;
+    text-align: center;
+    color: black;
+}
+
+/* header */
+#StatementContainer #Header {
+    font-weight: bold;
+}
+
+#StatementContainer #Bord {
+    margin-bottom: 80px;
+    width: 800px;
+}
+
+#StatementContainer #First {
+    font-family: 'Petit Formal Script', cursive;
+    font-size: 35px;
+}
+
+/* statement */
+#StatementContainer #Statement {
+    width: 800px;
+    margin: auto;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right: 20px;
+    padding-left: 20px;
+    text-align: justify;
+    font-variant: small-caps;
+    font-weight: bold;
+    border: 1px solid black;
+    box-shadow: 0.1px 4px 4px black;
+    background-color: rgba(200,200,200,0.6);
+}
+
+#StatementContainer #Statement p {
+    font-size: 20px;
+    line-height: 1;
+}
+
+/* animations */
+#StatementContainer #Statement.animation-element.slide-up.in-view {
+    transition-delay: 500ms;
+}
+
+/******************** CONTACT SECTION ********************/
+#ContactSection {
+    width: 100%;
+    height: 1250px;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    background-color: rgb(230,230,230);
+}  
+
+#ContactContainer {
+    width: 1350px;
+    margin-top: 50px;
+    text-align: center;
+}
+
+/* header */ 
+#ContactContainer #Header {
+    color: #DC6B2F;
+    letter-spacing: 5px;
+    padding-left: 7px;
+}
+
+#ContactContainer #Header #Sbp {
+    font-family: 'Petit Formal Script', cursive;
+    font-size: 35px;
+    font-weight: bold;
+}
+
+#ContactContainer #Bord {
+    width: 550px 
+}
+
+/* Icon Section */
+#ContactContainer #Icons {
+    margin: 80px auto;
+}
+
+#ContactContainer #Icons .col-md-3 img {
+    height: 150px;
+}
+
+#ContactContainer #Icons .col-md-3 h3 {
+    width: 250px;
+    margin: 15px auto;
+    font-size: 25px;
+    font-weight: bold;
+    border-bottom: 3px solid black;
+    color: #DC6B2F;
+}
+
+#ContactContainer #Icons .col-md-3 #Char {
+    font-size: 35px;
+}
+
+#ContactContainer #Icons .col-md-3 p {
+    width: 220px;
+    height: 150px;
+    margin: auto;
+    padding-right: 10px;
+    padding-left: 10px;
+    padding-top: 5px;
+    position: relative;
+    top: -15px;
+    font-size: 18px;
+    text-align: justify;
+    color: black;
+    border-right: 1px solid black;
+    border-left: 1px solid black; 
+    border-bottom: 1px solid black;
+}
+
+/* col-md-6 */
+#ContactContainer .col-md-6 {
+    margin-top: 80px;
+}
+
+/* first col */
+/* contact map */
+#ContactContainer #FirstCol {
+    height: 600px;
+}
+
+#ContactContainer #Overlay {
+    position: relative;
+    width: 500px;
+    height: 450px;
+    top: 450px;
+    float: right;
+    margin-top: -450px;
+    background: transparent;
+    background-color: rgba(220, 107, 47,0.5);
+    z-index: 999;
+}
+
+#ContactContainer #Map #GoogleMap {
+    height: 450px;
+    width: 500px;
+    margin: auto;
+    float: right;
+    border: 5px solid black;
+    padding: 5px;
+    background-color: rgb(100,100,100);
+    box-shadow: 0.1px 4px 4px black;
+}
+
+/* sec col - form*/
+#ContactContainer #SecondCol { 
+    height: 600px;
+}
+
+/* contact form */
+#ContactContainer #ContactForm {
+    width: 500px;
+    height: 450px;
+    float: left;
+    margin: auto;
+    border: 1px solid black;
+    box-shadow: 0.1px 4px 4px black;
+    color: #DC6B2F;
+    font-variant: small-caps;
+}
+
+/* form - col-md-6 */
+#ContactContainer #ContactForm .col-md-6 {
+    width: 249px;
+    margin-top: 10px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+/* header text */
+#ContactContainer #ContactForm .col-md-6 h2 {
+    width: 190px;
+    margin: auto;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border: 1px solid black;
+    font-size: 15px;
+}
+
+/* container for image and input */
+#ContactContainer #ContactForm #Input {
+    width: 190px;
+    height: 38px;
+    margin: 10px auto;
+    border: 2px solid black;
+    background-color: #606262;
+}
+
+/* image adjustment */
+#ContactContainer #ContactForm #Input #Image {
+    width: 34px;
+    height: 30px;
+    margin-top: 3px;
+    float: left; 
+}
+
+#ContactContainer #ContactForm #Input img {
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: -1px;
+    height: 30px;
+}
+
+/* input area */
+#ContactContainer #ContactForm #Input input {
+    border: 1px solid black;
+    height: 30px;
+    width: 150px;
+    margin-top: 2px;
+    float: left;
+}
+
+/* comment section */
+#ContactContainer #ContactForm #Comment {
+    margin-top: 0px;
+}
+
+/* comment header */
+#ContactContainer #ContactForm #Comment h2 {
+    width: 439px;
+    margin: 10px auto;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border: 1px solid black;
+}
+
+/* comment text area container */
+#ContactContainer #ContactForm #Comment #Text {
+    width: 439px;
+    height: 72px;
+    padding-top: 5px;
+    margin: auto;
+    border: 2px solid black;
+    background-color: #606262;
+}
+
+/* image adjust */
+#ContactContainer #ContactForm #Comment img {
+    height: 60px;
+    margin-top: -1px;
+    display: inline-block;
+    float: left;
+}
+
+/* comment text area */
+#ContactContainer #ContactForm #Comment textarea {
+    width: 365px;
+    height: 60px;
+    margin-left: 1px;
+    margin-top: -1px;
+    display: inline-block;
+    float: left;
+    resize: none;
+}
+
+/* form - submit button */
+#ContactContainer #ContactForm #Submit {
+    margin-top: 30px;
+}
+
+#ContactContainer #ContactForm #Submit img {
+    height: 50px;
+}
+
+#ContactContainer #ContactForm #Submit button {
+    width: 150px;
+    background-color: #606262;
+    border: 2px solid black;
+}
+
+/******************** FOOTER SECTION ********************/
+#FooterSection {
+    width: 100%;
+    height: 200px;
+    background: linear-gradient( #DC6B2F, rgb(200,200,200));
+    border-top: 1px solid black;
+}
+
+#FooterContainer {
+    text-align: center;   
+}
+
+#FooterContainer h1 {
+    font-size: 30px;
+    font-variant: small-caps;
+    color: black;   
+}
+
+#FooterContainer h3 {
+    font-size: 20px;
+    color: black;
+}
+
+
+/******************** MEDIA 991PX ********************/ 
+@media (max-width: 991px) {
+.navbar div li { 
+   font-size: 16px;
+   letter-spacing: 3px;
+   margin-right: 6px;
+   margin-left: 6px;
+}
+
+}
+
+
+/******************** MEDIA 767PX ********************/ 
+@media (max-width: 767px) {
+/******************** NAVBAR ********************/
+.navbar .navbar-nav { 
+   display: inline-block; 
+   float: none;
+   vertical-align: top; 
+}
+
+/* navigation */
+.navbar .navbar-header .navbar-brand {
+    font-size: 25px;
+    color: rgb(35, 36, 38);
+    font-family: "Courier New";
+    text-align: center;
+    font-variant: small-caps;
+    font-weight: bold;
+    letter-spacing: 10px;
+    margin-top: 10px;
+    line-height: 15px;
+}
+
+.navbar .navbar-collapse { 
+   text-align: center;
+}
+
+/* text adjustment */
+.navbar div li { 
+   font-family: "Courier New";
+   font-size: 13px;
+   letter-spacing: 4px;
+   display: inline-block; 
+   float: none;
+   vertical-align: top; 
+   margin-right: 3px; 
+   margin-left: 3px;
+   margin-top: 5px;
+   margin-bottom: 5px;
+   font-variant: small-caps;
+   font-weight: bold;
+   border: 1px solid black;
+}
+
+.navbar div li a {
+    padding-bottom: 8px;
+    padding-left: 17px;
+}
+
+/* remove image */
+.navbar div #Image {
+    margin-right: 0px;
+    margin-left: 0px;
+    border: none; 
+    display: none;
+}
+
+.navbar div li img {
+    display: none;
+    height: 0px;
+    width: 0px;
+}
+
+/* button image */
+nav button img { 
+   height: 60px;
+   margin-top: -10px; 
+   padding: 2px;
+}
+
+/* button style */
+.navbar .navbar-toggle {
+    height: 60px;
+    margin-top: 6px;
+    margin-bottom: 5px;
+    border: 1px solid black;
+    border-radius: 0px;
+    background-color: white;
+}
+
+}
+
+
+/******************** MEDIA 499PX ********************/ 
+@media (max-width: 499px) {
+/******************** NAVBAR ********************/
+.navbar div li { 
+   font-family: "Courier New";
+   font-size: 12px;
+   letter-spacing: 2px;
+   display: inline-block; 
+   float: none;
+   vertical-align: top; 
+   margin-right: 1px; 
+   margin-left: 1px;
+   font-variant: small-caps;
+   font-weight: bold;
+}
+
+.navbar div li a {
+    padding-right: 8px;
+    padding-left: 8px;
+}
+
+}

@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    
+    <!---------- META ---------->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <title> Sweet Basil Pizzeria | Brooklyn </title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Slab" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Petit+Formal+Script" rel="stylesheet">
+    <link href="../css/index.css" rel="stylesheet">
+    <link href="CSS/Animations.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-
+    BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="icon" type="image/png" href="">
+    
+  </head>
+    
+   <body>
+   
+   
+   <!---------- PRE LOADING SCREEN ---------->
+   <div id="PreLoader">
+         
+         <div id="PreLoadText">
+            <h2> we apprieciate your patience </h2>
+         </div>
+         
+         <div id="Background">
+            <div class="loader" id="Loader">
+               <img class="rotate" id="Spinner" src="Welcome/Spinner.png">
+            </div>
+         </div>
+           
+   </div>
+   
+   <!---------- NAVIGATION BAR ---------->
+   <nav class="navbar navbar-default navbar-fixed-top hidden" role="navigation" id="Navbar">
+      <div class="container-fluid">
+        <div class="navbar-header">
+           <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navigation">
+             <img src="Welcome/Example.png">
+           </button>
+           <a class="navbar-brand" href="#">Navigation</a>
+        </div> 
+        <div id="navigation" class="collapse navbar-collapse">
+           <ul class="nav navbar-nav">
+             <li><a href="#WelcomeSection" class="slide-section">Welcome</a></li>
+             <li><a href="#AboutSection" class="slide-section">About</a></li>
+             <li><a href="#LargePizzaSection" class="slide-section">Specials</a></li>
+             <li id="Image"> <img src="Welcome/Example.png"> </li>
+             <li><a href="#MenuSection" class="slide-section">Menu</a></li>
+             <li><a href="#OrderSection" class="slide-section">Ordering</a></li>              
+             <li><a href="#ContactSection" class="slide-section">Contact</a></li>
+           </ul>
+        </div>
+   </nav>
+   
+
+   <!---------- WELCOME SECTION ---------->
+   <div class="section" id="WelcomeSection">
+      <div class="container" id="WelcomeContainer">
+      
+         <div id="Chalkboard">
+            <div id="Img">
+               <h2 id="Sweet"> <span id="SBord">Sweet Basil Pizzeria</span> </h2>
+               <h3 id="SBP"> SBP </h3>
+               
+               <div id="Order">
+                  <p> 10% off online orders </p>
+                  <a class="btn btn-default" id="Btn" href="/order">
+                     <h3>Order</h3> 
+                     <img src="Welcome/Arrow.png">
+                  </a> 
+               </div> 
+               
+               <div id="LargePizza">
+                  <h3> <span id="Large">Large Pizza Special</span> </h2>
+                  <p> $10 - Take Out Only </p>
+               </div>
+               
+               <div id="Location">
+                  <p id="First"> 450 5th Ave <p>
+                  <p> Park Slope - Brooklyn </p>
+               </div>  
+            </div>  
+         </div>
+
+      </div> 
+   </div> 
+   
+   
+   <!---------- ABOUT SECTION ---------->
+   <div class="section" id="AboutSection">
+      <div class="container" id="AboutContainer">
+      
+         <!-- header -->
+         <h1 id="Head" class="animation-element slide-down"> <span id="Header"> <span id="The">THE</span>  <span id="SBP">SBP</span> <span id="Story">STORY</span> </span> </h1>
+         
+         
+         <div id="Bord" class="animation-element slide-up"> </div>
+         
+         <!-- first col -->   
+         <div class="col-md-6" id="FirstColumn">
+            <!-- carousel -->
+            <div id="Carousel" class="animation-element slide-up">
+   
+               <div id="SlideOne">
+                  <div id="Image">
+                     <h3> <span id="Head">Header</span> </h3> 
+                     <p> Caption </p> 
+                  </div>
+               </div>
+      
+               <div id="SlideTwo">
+                  <div id="Image">
+                     <h3> <span id="Head">HeaderTwo</span> </h3> 
+                     <p> CaptionTwo </p> 
+                  </div>
+               </div>
+      
+               <div id="SlideThree">
+                  <div id="Image">
+                     <h3> <span id="Head">HeaderThree</span> </h3> 
+                     <p> CaptionThree </p> 
+                  </div>
+               </div>
+               
+               <div id="SlideFour">
+                  <div id="Image">
+                     <h3> <span id="Head">HeaderFour</span> </h3> 
+                     <p> CaptionFour </p> 
+                  </div>
+               </div>
+               
+               <div id="SlideFive"> 
+                  <div id="Image"> 
+                     <h3> <span id="Head">HeaderFive</span> </h3> 
+                     <p> CaptionFive </p> 
+                  </div>
+               </div>
+      
+            </div>
+         </div> 
+         
+         <!-- second column --> 
+         <div class="col-md-6" id="SecondColumn">
+            <div id="Paragraph">
+               <p> SBP’s roots date back to the early 1800’s when the recipes we currently use were formulated and handed down through the generations to Giovanni & Anna Rizzi who were born in Mola Dibari Italy in the 1930’s. When they migrated to the United States, they brought those same old world Italian recipes with them. In the 1980’s Giovanni & Anna’s son Peter Rizzi opened his first restaurant in Brooklyn, New York using the Rizzi family’s old world recipes. The restaurant was so highly successful that Pete was able to launch ten additional restaurants in a short time span. In the early 2000’s after a highly successful career and being thought of by his peers as a highly respected restauranteur, Pete decided to sell his many restaurants and spend more time with his wife of 23 years Kim and his three children PJ, Taylor and Skyler. After selling his restaurants Pete quickly realized that the restaurant business was in his blood and he felt compelled to return to the business that he loved and Sweet Basil Pizzeria (SBP) was born! </p>
+            </div>
+         </div> 
+      
+      </div>
+   </div> 
+
+
+   <!---------- PIZZA SECTION ---------->
+   <div class="section" id="LargePizzaSection">
+      <div class="container" id="LargePizzaContainer">
+         
+         <div id="Chalkboard">
+            <div id="Img">
+               <!-- header -->
+               <h3 id="First"> SBP </h3> 
+               <h2 id="Second"> specialties </h2> 
+               
+               <!-- statement -->
+               <div id="Statement">
+                  <h3 id="Third"> Fresh Ingrediants </h3>
+                  <p id="Fourth"> hand made and hand <br> tossed without compromise </p>
+               </div> 
+               
+               <!-- teaser --> 
+               <div id="Teaser">
+                  <p id="Fifth"> TO VIEW OUR SIGNATURE <br> DISHES PLEASE CLICK THE <br> BUTTON BELLOW </p>
+               </div>
+               
+               <!-- button -->
+               <section id="DownBtn" class="btn animation-element slide-up">
+                  <h1> continue </h1>
+	              <a href="#SpecialtiesSection" class="slide-section">
+	              <span></span>
+	              </a>
+               </section>    
+            </div>
+         </div>
+         
+      </div>
+   </div> 
+   
+   <!---------- SPECIALTIES SECTION ---------->
+   <div class="section" id="SpecialtiesSection">
+      <div class="container" id="SpecialtiesContainer">
+      
+         <!-- header --> 
+         <h1 id="Head" class="animation-element slide-down"> <span id="Header"><span id="Soon"> soon to be </span> <span id="World">WORLD FAMOUS SPECIALTIES</span> </span> </h1>
+         <div id="Bord" class="animation-element slide-up"> </div>
+         
+         <!-- icons -->
+         <div id="Icons">
+            
+            <div class="col-md-3">
+               <div id="ColOne">
+                  <img src="Specialties/Placehold.png" id="One" class="animation-element slide-from-left">
+                  <div id="Caption" class="animation-element slide-up">
+                     <h3> <span id="State">Chicken Parm Rolls</span> </h3>
+                     <p> Hand breaded organic chicken. Baked or fried. Fresh, milk fed creamy mozzarella cheese with mommas home made sauce rolled in freshly prepared doe and baked to perfection. </p>
+                  </div>
+               </div>
+            </div>
+
+            <div class="col-md-3">
+               <div id="ColTwo">
+                  <img src="Specialties/Placehold.png" id="Two" class="animation-element slide-from-right">
+                  <div id="Caption" class="animation-element slide-up">
+                     <h3> <span id="State">Grandma Pizza</span> </h3>
+                     <p> Mommas pizza which will excite and delight your senses. This specialty pizza is not only beautiful to the eyes but is a sumptuous thin crusted , crispy pizza that will ignite your senses </p>
+                  </div>
+               </div>
+            </div>
+
+            <div class="col-md-3">
+               <div id="ColThree">
+                  <img src="Specialties/Placehold.png" id="Three" class="animation-element slide-from-left">
+                  <div id="Caption" class="animation-element slide-up">
+                     <h3> <span id="State">Margarita Pizza</span> </h3>
+                     <p> This is the pizza that almost made us famous, thin crusted, hand tossed, vine ripe plump tomatoes, fresh milk fed mozzarella, and sweet basil provide a managerie of taste. </p>
+                  </div>
+               </div>
+            </div>
+
+            <div class="col-md-3">
+               <div id="ColFour">
+                  <img src="Specialties/Placehold.png" id="Four" class="animation-element slide-from-right">
+                  <div id="Caption" class="animation-element slide-up">
+                     <h3> <span id="State">Sicilian Pizza</span> </h3>
+                     <p> Fresh milk fed mozzarella on top, mommas sauce on bottom. Mommas sauce on top and fresh milk fed mozzarella on bottom. Either way it provides a succulent, thick crusted, true brooklyn experience. </p>
+                  </div>
+               </div>
+            </div>
+            
+         </div>
+      
+      </div>
+   </div> 
+   
+   <!---------- MENU SECTION ---------->
+   <div class="section" id="MenuSection">
+      <div class="container" id="MenuContainer">
+         
+         <div id="Chalkboard">
+            <div id="Img">
+               <h3 id="First"> MENU </h3>
+               
+               <div id="Statement">
+                  <p> Sweet Basil Pizzeria's, authentic, mouth watering recipes date back to the mid 1800s. Our old country recipes have been modernized to serve the people in the park slope community. When we prepare a sumptuous meal for you, its like preparing for our own family. </p>   
+               </div>
+               
+               <div id="Teaser">
+                  <h3 id="One"> To view our menu </h3>
+                  <h3> please click here </h3>   
+               </div>
+
+               <button id="Button" class="animation-element slide-from-right" onClick="window.open('Menu/Menu.pdf');">
+                  <img src="Menu/Click.png">
+               </button>           
+            </div>
+         </div>
+         
+      </div> 
+   </div> 
+
+   <!---------- ORDER SECTION ---------->
+   <div class="section" id="OrderSection">
+      <div class="container" id="OrderContainer">
+         
+         <!-- header -->
+         <h1 id="Head" class="animation-element slide-down"> <span id="Header"> <span id="Online">online</span> ORDERING</span> </h1>    
+         <div id="Bord" class="animation-element slide-up"> </div>
+         
+         <!-- image -->
+         <div id="Image" class="animation-element slide-up">
+            <h3 id="Teaser"> Order on any device </h3>
+            <h3 id="TeaserTwo"> at any location. </h3>
+            
+            <!-- laptop section-->
+            <div id="Button">
+               <h2> Click Here </h2>
+               <a href="order">
+                  <img src="Order/Btn.png">
+               </a>
+            </div>
+            
+            <!-- ipad section -->
+            <div id="Ipad"> 
+               <h2 id="First"> <span id="Border">sbp</span> </h2>
+               <h2> brooklyn </h2>
+            </div> 
+         </div>
+         
+      </div>
+   </div> 
+   
+   
+   <!---------- STATEMENT SECTION ---------->
+   <div class="section" id="StatementSection"> 
+      <div class="container" id="StatementContainer"> 
+      
+         <!-- header --> 
+         <h1 id="Head" class="animation-element slide-down"> <span id="Header"> <span id="First">pursuing</span> <span id="Second">EXCELLENCE</span> </span> </h1> 
+         <div id="Bord" class="animation-element slide-up"> </div> 
+           
+         <!-- statement --> 
+         <div id="Statement" class="animation-element slide-up"> 
+            <p> At Tommy's Famous Cheesesteaks and Pizza, we pride ourselves on preparing a delicious meal for every customer, every time. Our ingredients are fresh, and our staff is friendly and courteous  </p>
+         </div>
+      
+      </div>
+   </div> 
+   
+
+   <!---------- CONTACT SECTION ---------->
+   <div class="section" id="ContactSection">
+      <div class="container" id="ContactContainer">
+      
+         <!-- header -->
+         <h1 id="Head" class="animation-element slide-down">
+         <span id="Header">CONTACT <span id="Sbp">SBP</span> </span> </h1>
+         <div id="Bord" class="animation-element slide-up"> </div>
+         
+         <!-- icons -->
+         <div id="Icons"> 
+         
+            <div class="col-md-3">
+               <img src="Contact/1.png">
+               <h3> <span id="Char">T</span>elephone </h3>
+               <p> Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commo do ligula eget dolor.  </p>
+            </div>
+            
+            <div class="col-md-3">
+               <img src="Contact/2.png">
+               <h3> <span id="Char">E</span>mail </h3>
+               <p> Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commo do ligula eget dolor.  </p>
+            </div>
+            
+            <div class="col-md-3">
+               <img src="Contact/3.png">
+                <h3> <span id="Char">L</span>ocation </h3> 
+                <p> Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commo do ligula eget dolor.  </p>
+            </div>
+            
+            <div class="col-md-3">
+               <img src="Contact/4.png">
+                <h3> <span id="Char">H</span>ours </h3> 
+                <p> Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commo do ligula eget dolor.  </p>
+            </div>
+            
+         </div>
+         
+         <!-- map --> <!-- col one -->
+         <div class="col-md-6" id="FirstCol">
+         <div id="Map">
+            <div id="Overlay"></div>  
+            <iframe id="GoogleMap" src="https://maps.google.com/maps?q=450 5th Avenue, Brooklyn, NY, United States, &t=h&z=20&ie=UTF8&iwloc=&output=embed">
+            <a class="addmaps" href="http://www.embedgooglemap.net"id="get-map-data" mce_href="http://maps.google.com/maps/">450 5th Avenue, Brooklyn, NY, United States, </a>
+            <style>#gmap_canvas img{max-width:none!important;background:none!important}</style>
+            </iframe>
+         </div>
+         </div>
+                  
+         <!-- contact form --> <!-- col two -->
+         <div class="col-md-6" id="SecondCol">
+         <div id="ContactForm">
+            <form id="Form" method="post" action="../../images/PHP/Contact.php">
+               
+               <div class="col-md-6">
+                  <h2> First Name </h2>
+                  <div id="Input">
+                     <div id="Image">
+                        <img src="Contact/One.png">
+                     </div> 
+                     <input type="text" name="First">
+                  </div>
+               </div> 
+   
+               <div class="col-md-6">
+                  <h2> Last Name </h2>
+                  <div id="Input">
+                     <div id="Image">
+                        <img src="Contact/Two.png">
+                     </div>
+                     <input type="text" name="Last">
+                  </div>
+               </div> 
+               
+               <div class="col-md-6">
+                  <h2> Telephone Number </h2> 
+                  <div id="Input">
+                     <div id="Image">
+                        <img src="Contact/Three.png">
+                     </div> 
+                     <input type="text" name="Telephone">
+                  </div>
+               </div> 
+   
+               <div class="col-md-6">
+                  <h2> Email Address </h2>
+                  <div id="Input">
+                     <div id="Image">
+                        <img src="Contact/Four.png" id="Email">
+                     </div>
+                     <input type="text" name="Email">
+                  </div>
+               </div> 
+               
+               <div id="Comment" class="col-md-12">
+                  <h2> Message </h2>
+                  <div id="Text">
+                     <img src="Contact/Five.png">
+                     <textarea name="Message"></textarea>
+                  </div>
+               </div>
+               
+               <div id="Submit" class="col-md-12">
+                 <div id="Sub">
+                    <button type="submit" name="Sumbit">
+                    <img src="Contact/Six.png">
+                    </button>
+                 </div>
+               </div>
+            
+            </form> 
+         </div>
+         </div>
+         <!-- end col -->
+         
+      </div>
+   </div> 
+   
+
+   <!---------- FOOTER ---------->
+   <footer class="section" id="FooterSection">
+      <div class="container" id="FooterContainer">
+            <h1> © 2017 Sweet Basil Pizzeria ® Inc. </h1>
+            <h3> Last Updated : January 2017. </h3>
+      </div>
+   </footer>
+   
+   
+   <!---------- SCRIPTS ---------->
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+   <script src="../js/AnimationTarget.js" type="text/javascript"></script>
+   <script src="../js/Pre-Loader.js" type="text/javascript"></script>
+   <script src="../js/SmoothScrolling.js" type="text/javascript"></script>
+   
+   </body>
+  
+</html>

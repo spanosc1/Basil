@@ -1,0 +1,45 @@
+div[type='menu']#menu {
+	background-color: #e6e8ed;
+	padding: 0px;
+}
+div[type='menu']#sections, #yourOrder {
+	border-width: 2px;
+	border-color: #337ab7;
+	border-style: solid;
+	border-radius: 7px;
+}
+
+div[type='menu']#sections {
+	padding: 0px;
+}
+
+#titleOrder {
+	text-align: center;
+}
+
+hr {
+	display: block;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+    margin-left: auto;
+    margin-right: auto;
+    border-width: 1px;
+    border-color: #337ab7;
+}
+
+h5 {
+	font-weight: bold;
+}
+
+label.checkbox-inline {
+	top: -10px;
+}
+
+.expandedMenu, #optionsPizza, #optionsSteak, #yourOrder {
+	height: 630px;
+	overflow-y: auto;
+}
+
+button[type='button'] {
+	float: right;
+}
