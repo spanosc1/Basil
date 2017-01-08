@@ -256,9 +256,32 @@ $(document).ready(function() {
 							  +  '</tr>';
 			$('#uniqueToppingsSteak').append(toppingHTML);
 		}
+		for(var i = 0; i < menu.cheesesteak.toppings.length; i++)
+		{
+			if(contains(menu.cheesesteak.toppings[i], defaultToppings))
+			{
+				var toppingHTML = '<tr>'
+									+ '<td>' + menu.cheesesteak.toppings[i] + '</td>'
+								  +   '<td>'
+								  +    	'<label class="checkbox-inline">'
+									+    		'<input type="checkbox" class="radio" value="' + menu.cheesesteak.toppings[i] + '" name="' + menu.cheesesteak.toppings[i] + '" /></label>'
+									+    '</td>'
+									+   	'<td>'
+									+   		'<select class="form-control" id="amount ' + menu.cheesesteak.toppings[i] + '">'
+									+				'<option value="normal">Normal</option>'
+									+			  '<option value="light">Light</option>'
+									+			  '<option value="extra">Extra</option>'
+									+			  '<option value="xxtra">Xxtra</option>'
+									+			  '<option value="side">Side</option>'
+									+			'</select>'
+									+   	'</td>'
+								  +  '</tr>';
+				$('#toppingsSteak').append(toppingHTML);
+			}
+		}
 	});
 	//Unchecks checkboxes in same name group if another is selected (ex. user picks left pepperoni, then changes to all)
-	$('#pizzaForm').on('click', 'input:checkbox', function() {
+	$('#masterFormDiv').on('click', 'input:checkbox', function() {
 		console.log("happened");
 	  var $box = $(this);
 	  if ($box.is(":checked")) {

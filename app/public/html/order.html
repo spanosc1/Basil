@@ -164,7 +164,7 @@
 						  </div>
 						</div>
 					</div>
-					<div class="col-md-8">
+					<div class="col-md-8" id="masterFormDiv">
 						<div class="tab-content">
 						<div id="optionsPizza" class="tab-pane fade">
 						  <h4 class="thisItem"></h4>						  
@@ -376,284 +376,25 @@
 								  </div>
 								  <hr>
 								  <div class="card">
-								    <div class="card-header" role="tab" id="headingSpecialty">
+								    <div class="card-header" role="tab" id="headingToppingsSteak">
 								      <h5 class="mb-0">
-								        <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseSpecialty" aria-expanded="false" aria-controls="collapseSpecialty">
-								          Specialty Toppings<span class="caret"></span>
+								        <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseToppingsSteak" aria-expanded="false" aria-controls="collapseToppingsSteak">
+								          Toppings<span class="caret"></span>
 								        </a>
 								      </h5>
 								    </div>
-								    <div id="collapseSpecialty" class="collapse" role="tabpanel" aria-labelledby="headingSpecialty">
+								    <div id="collapseToppingsSteak" class="collapse" role="tabpanel" aria-labelledby="headingToppingsSteak">
 								      <div class="card-block">
 								        <table class="table">
 												  <thead>
 												    <tr>
-												      <th>Sp. Toppings:</th>
-												      <th>Left/All/Right</th>
+												      <th>Toppings:</th>
+												      <th></th>
 												      <th>Extra</th>
 												    </tr>
 												  </thead>
-												  <tbody>
-												    <tr>
-												      <td>Steak</td>
-												      <td>
-												      	<label class="checkbox-inline">
-													    		<input type="checkbox" class="radio" value="steak" where="left" where="left" name="steak" /></label>
-													    	<label class="checkbox-inline">
-															    <input type="checkbox" class="radio" value="steak" where="all" name="steak" /></label>
-															  <label class="checkbox-inline">
-															    <input type="checkbox" class="radio" value="steak" where="right" name="steak" /></label>
-													    </td>
-													    <td>
-													   		<select class="form-control" id="amountSteak">
-																	<option value="normal">Normal</option>
-																  <option value="light">Light</option>
-																  <option value="extra">Extra</option>
-																  <option value="xxtra">Xxtra</option>
-																  <option value="side">Side</option>
-																</select>
-													   	</td>
-												    </tr>
-												    <tr>
-												      <td>Chicken</td>
-												      <td>
-												      	<label class="checkbox-inline">
-													    		<input type="checkbox" class="radio" value="chicken" where="left" where="left" name="chicken" /></label>
-													    	<label class="checkbox-inline">
-															    <input type="checkbox" class="radio" value="chicken" where="all" name="chicken" /></label>
-															  <label class="checkbox-inline">
-															    <input type="checkbox" class="radio" value="chicken" where="right" name="chicken" /></label>
-													    </td>
-													    <td>
-													   		<select class="form-control" id="amountChicken">
-																	<option value="normal">Normal</option>
-																  <option value="light">Light</option>
-																  <option value="extra">Extra</option>
-																  <option value="xxtra">Xxtra</option>
-																  <option value="side">Side</option>
-																</select>
-													   	</td>
-												    </tr>
-												    <tr>
-												      <td>Meatball</td>
-												      <td>
-												      	<label class="checkbox-inline">
-													    		<input type="checkbox" class="radio" value="meatball" where="left" where="left" name="meatball" /></label>
-													    	<label class="checkbox-inline">
-															    <input type="checkbox" class="radio" value="meatball" where="all" name="meatball" /></label>
-															  <label class="checkbox-inline">
-															    <input type="checkbox" class="radio" value="meatball" where="right" name="meatball" /></label>
-													    </td>
-													    <td>
-													   		<select class="form-control" id="amountMeatball">
-																	<option value="normal">Normal</option>
-																  <option value="light">Light</option>
-																  <option value="extra">Extra</option>
-																  <option value="xxtra">Xxtra</option>
-																  <option value="side">Side</option>
-																</select>
-													   	</td>
-												    </tr>
-												    <tr>
-												      <td>Shrimp</td>
-												      <td>
-												      	<label class="checkbox-inline">
-													    		<input type="checkbox" class="radio" value="shrimp" where="left" where="left" name="shrimp" /></label>
-													    	<label class="checkbox-inline">
-															    <input type="checkbox" class="radio" value="shrimp" where="all" name="shrimp" /></label>
-															  <label class="checkbox-inline">
-															    <input type="checkbox" class="radio" value="shrimp" where="right" name="shrimp" /></label>
-													    </td>
-													    <td>
-													   		<select class="form-control" id="amountShrimp">
-																	<option value="normal">Normal</option>
-																  <option value="light">Light</option>
-																  <option value="extra">Extra</option>
-																  <option value="xxtra">Xxtra</option>
-																  <option value="side">Side</option>
-																</select>
-													   	</td>
-												    </tr>
-												    <tr>
-												      <td>Calamari</td>
-												      <td>
-												      	<label class="checkbox-inline">
-													    		<input type="checkbox" class="radio" value="calamari" where="left" where="left" name="calamari" /></label>
-													    	<label class="checkbox-inline">
-															    <input type="checkbox" class="radio" value="calamari" where="all" name="calamari" /></label>
-															  <label class="checkbox-inline">
-															    <input type="checkbox" class="radio" value="calamari" where="right" name="calamari" /></label>
-													    </td>
-													    <td>
-													   		<select class="form-control" id="amountCalamari">
-																	<option value="normal">Normal</option>
-																  <option value="light">Light</option>
-																  <option value="extra">Extra</option>
-																  <option value="xxtra">Xxtra</option>
-																  <option value="side">Side</option>
-																</select>
-													   	</td>
-												    </tr>
-												    <tr>
-												      <td>Clams</td>
-												      <td>
-												      	<label class="checkbox-inline">
-													    		<input type="checkbox" class="radio" value="clams" where="left" where="left" name="clams" /></label>
-													    	<label class="checkbox-inline">
-															    <input type="checkbox" class="radio" value="clams" where="all" name="clams" /></label>
-															  <label class="checkbox-inline">
-															    <input type="checkbox" class="radio" value="clams" where="right" name="clams" /></label>
-													    </td>
-													    <td>
-													   		<select class="form-control" id="amountClams">
-																	<option value="normal">Normal</option>
-																  <option value="light">Light</option>
-																  <option value="extra">Extra</option>
-																  <option value="xxtra">Xxtra</option>
-																  <option value="side">Side</option>
-																</select>
-													   	</td>
-												    </tr>
-												    <tr>
-												      <td>Eggplant</td>
-												      <td>
-												      	<label class="checkbox-inline">
-													    		<input type="checkbox" class="radio" value="eggplant" where="left" where="left" name="eggplant" /></label>
-													    	<label class="checkbox-inline">
-															    <input type="checkbox" class="radio" value="eggplant" where="all" name="eggplant" /></label>
-															  <label class="checkbox-inline">
-															    <input type="checkbox" class="radio" value="eggplant" where="right" name="eggplant" /></label>
-													    </td>
-													    <td>
-													   		<select class="form-control" id="amountEggplant">
-																	<option value="normal">Normal</option>
-																  <option value="light">Light</option>
-																  <option value="extra">Extra</option>
-																  <option value="xxtra">Xxtra</option>
-																  <option value="side">Side</option>
-																</select>
-													   	</td>
-												    </tr>
-												    <tr>
-												      <td>Fresh Mozzarella</td>
-												      <td>
-												      	<label class="checkbox-inline">
-													    		<input type="checkbox" class="radio" value="fresh mozzarella" where="left" where="left" name="freshMozzarella" /></label>
-													    	<label class="checkbox-inline">
-															    <input type="checkbox" class="radio" value="fresh mozzarella" where="all" name="freshMozzarella" /></label>
-															  <label class="checkbox-inline">
-															    <input type="checkbox" class="radio" value="fresh mozzarella" where="right" name="freshMozzarella" /></label>
-													    </td>
-													    <td>
-													   		<select class="form-control" id="amountFreshMozzarella">
-																	<option value="normal">Normal</option>
-																  <option value="light">Light</option>
-																  <option value="extra">Extra</option>
-																  <option value="xxtra">Xxtra</option>
-																  <option value="side">Side</option>
-																</select>
-													   	</td>
-												    </tr>
-												    <tr>
-												      <td>Arugula</td>
-												      <td>
-												      	<label class="checkbox-inline">
-													    		<input type="checkbox" class="radio" value="arugula" where="left" where="left" name="arugula" /></label>
-													    	<label class="checkbox-inline">
-															    <input type="checkbox" class="radio" value="arugula" where="all" name="arugula" /></label>
-															  <label class="checkbox-inline">
-															    <input type="checkbox" class="radio" value="arugula" where="right" name="arugula" /></label>
-													    </td>
-													    <td>
-													   		<select class="form-control" id="amountArugula">
-																	<option value="normal">Normal</option>
-																  <option value="light">Light</option>
-																  <option value="extra">Extra</option>
-																  <option value="xxtra">Xxtra</option>
-																  <option value="side">Side</option>
-																</select>
-													   	</td>
-												    </tr>
-												    <tr>
-												      <td>Hot Sopressata</td>
-												      <td>
-												      	<label class="checkbox-inline">
-													    		<input type="checkbox" class="radio" value="hot sopressata" where="left" where="left" name="hotSopressata" /></label>
-													    	<label class="checkbox-inline">
-															    <input type="checkbox" class="radio" value="hot sopressata" where="all" name="hotSopressata" /></label>
-															  <label class="checkbox-inline">
-															    <input type="checkbox" class="radio" value="hot sopressata" where="right" name="hotSopressata" /></label>
-													    </td>
-													    <td>
-													   		<select class="form-control" id="amountSopressata">
-																	<option value="normal">Normal</option>
-																  <option value="light">Light</option>
-																  <option value="extra">Extra</option>
-																  <option value="xxtra">Xxtra</option>
-																  <option value="side">Side</option>
-																</select>
-													   	</td>
-												    </tr>
-												    <tr>
-												      <td>Broccoli Rabe</td>
-												      <td>
-												      	<label class="checkbox-inline">
-													    		<input type="checkbox" class="radio" value="broccoli rabe" where="left" where="left" name="broccoliRabe" /></label>
-													    	<label class="checkbox-inline">
-															    <input type="checkbox" class="radio" value="broccoli rabe" where="all" name="broccoliRabe" /></label>
-															  <label class="checkbox-inline">
-															    <input type="checkbox" class="radio" value="broccoli rabe" where="right" name="broccoliRabe" /></label>
-													    </td>
-													    <td>
-													   		<select class="form-control" id="amountBroccoliRabe">
-																	<option value="normal">Normal</option>
-																  <option value="light">Light</option>
-																  <option value="extra">Extra</option>
-																  <option value="xxtra">Xxtra</option>
-																  <option value="side">Side</option>
-																</select>
-													   	</td>
-												    </tr>
-												    <tr>
-												      <td>Prosciutto</td>
-												      <td>
-												      	<label class="checkbox-inline">
-													    		<input type="checkbox" class="radio" value="prosciutto" where="left" where="left" name="prosciutto" /></label>
-													    	<label class="checkbox-inline">
-															    <input type="checkbox" class="radio" value="prosciutto" where="all" name="prosciutto" /></label>
-															  <label class="checkbox-inline">
-															    <input type="checkbox" class="radio" value="prosciutto" where="right" name="prosciutto" /></label>
-													    </td>
-													    <td>
-													   		<select class="form-control" id="amountProsciutto">
-																	<option value="normal">Normal</option>
-																  <option value="light">Light</option>
-																  <option value="extra">Extra</option>
-																  <option value="xxtra">Xxtra</option>
-																  <option value="side">Side</option>
-																</select>
-													   	</td>
-												    </tr>
-												    <tr>
-												      <td>Diez Quattro</td>
-												      <td>
-												      	<label class="checkbox-inline">
-													    		<input type="checkbox" class="radio" value="diez quattro" where="left" where="left" name="diezQuattro" /></label>
-													    	<label class="checkbox-inline">
-															    <input type="checkbox" class="radio" value="diez quattro" where="all" name="diezQuattro" /></label>
-															  <label class="checkbox-inline">
-															    <input type="checkbox" class="radio" value="diez quattro" where="right" name="diezQuattro" /></label>
-													    </td>
-													    <td>
-													   		<select class="form-control" id="amountDiezQuattro">
-																	<option value="normal">Normal</option>
-																  <option value="light">Light</option>
-																  <option value="extra">Extra</option>
-																  <option value="xxtra">Xxtra</option>
-																  <option value="side">Side</option>
-																</select>
-													   	</td>
-												    </tr>
+												  <tbody id="toppingsSteak">
+												    <!--STEAK TOPPINGS-->
 												  </tbody>
 												</table>
 								      </div>
@@ -661,179 +402,46 @@
 								  </div>
 								  <hr>
 								  <div class="card">
-								    <div class="card-header" role="tab" id="headingThisPie">
+								    <div class="card-header" role="tab" id="headingInstructionsSteak">
 								      <h5 class="mb-0">
-								        <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseThisPie" aria-expanded="false" aria-controls="collapseThisPie">
-								          Sauce/Cheese<span class="caret"></span>
-								        </a>
-								      </h5>
-								    </div>
-								    <div id="collapseThisPie" class="collapse" role="tabpanel" aria-labelledby="headingThisPie">
-								      <div class="card-block">
-								        <table class="table">
-												  <thead>
-												    <tr>
-												      <th>Sauce/Cheese:</th>
-												      <th>Left/All/Right</th>
-												      <th>Extra</th>
-												    </tr>
-												  </thead>
-												  <tbody>
-												    <tr>
-												      <td>Pizza Sauce</td>
-												      <td>
-												      	<label class="checkbox-inline">
-													    		<input type="checkbox" class="radio" value="pizza sauce" where="left" name="pizzaSauce" /></label>
-													    	<label class="checkbox-inline">
-															    <input type="checkbox" class="radio" value="pizza sauce" where="all" name="pizzaSauce" /></label>
-															  <label class="checkbox-inline">
-															    <input type="checkbox" class="radio" value="pizza sauce" where="right" name="pizzaSauce" /></label>
-													    </td>
-													    <td>
-													   		<select class="form-control" id="amountPizzaSauce">
-																	<option value="normal">Normal</option>
-																  <option value="light">Light</option>
-																  <option value="extra">Extra</option>
-																  <option value="xxtra">Xxtra</option>
-																  <option value="side">Side</option>
-																</select>
-													   	</td>
-												    </tr>
-												    <tr>
-												      <td>Pizza Cheese</td>
-												      <td>
-												      	<label class="checkbox-inline">
-													    		<input type="checkbox" class="radio" value="pizza cheese" where="left" name="pizzaCheese" /></label>
-													    	<label class="checkbox-inline">
-															    <input type="checkbox" class="radio" value="pizza cheese" where="all" name="pizzaCheese" /></label>
-															  <label class="checkbox-inline">
-															    <input type="checkbox" class="radio" value="pizza cheese" where="right" name="pizzaCheese" /></label>
-													    </td>
-													    <td>
-													   		<select class="form-control" id="amountPizzaCheese">
-																	<option value="normal">Normal</option>
-																  <option value="light">Light</option>
-																  <option value="extra">Extra</option>
-																  <option value="xxtra">Xxtra</option>
-																  <option value="side">Side</option>
-																</select>
-													   	</td>
-												    </tr>
-												    <tr>
-												      <td>Fresh Tomato Sauce</td>
-												      <td>
-												      	<label class="checkbox-inline">
-													    		<input type="checkbox" class="radio" value="fresh tomato sauce" where="left" name="freshTomatoSauce" /></label>
-													    	<label class="checkbox-inline">
-															    <input type="checkbox" class="radio" value="fresh tomato sauce" where="all" name="freshTomatoSauce" /></label>
-															  <label class="checkbox-inline">
-															    <input type="checkbox" class="radio" value="fresh tomato sauce" where="right" name="freshTomatoSauce" /></label>
-													    </td>
-													    <td>
-													   		<select class="form-control" id="amountFreshTomatoSauce">
-																	<option value="normal">Normal</option>
-																  <option value="light">Light</option>
-																  <option value="extra">Extra</option>
-																  <option value="xxtra">Xxtra</option>
-																  <option value="side">Side</option>
-																</select>
-													   	</td>
-												    </tr>
-												    <tr>
-												      <td>Buffalo Sauce</td>
-												      <td>
-												      	<label class="checkbox-inline">
-													    		<input type="checkbox" class="radio" value="buffalo sauce" where="left" name="buffaloSauce" /></label>
-													    	<label class="checkbox-inline">
-															    <input type="checkbox" class="radio" value="buffalo sauce" where="all" name="buffaloSauce" /></label>
-															  <label class="checkbox-inline">
-															    <input type="checkbox" class="radio" value="buffalo sauce" where="right" name="buffaloSauce" /></label>
-													    </td>
-													    <td>
-													   		<select class="form-control" id="amountBuffaloSauce">
-																	<option value="normal">Normal</option>
-																  <option value="light">Light</option>
-																  <option value="extra">Extra</option>
-																  <option value="xxtra">Xxtra</option>
-																  <option value="side">Side</option>
-																</select>
-													   	</td>
-												    </tr>
-												    <tr>
-												      <td>Pesto Sauce</td>
-												      <td>
-												      	<label class="checkbox-inline">
-													    		<input type="checkbox" class="radio" value="pesto sauce" where="left" name="pestoSauce" /></label>
-													    	<label class="checkbox-inline">
-															    <input type="checkbox" class="radio" value="pesto sauce" where="all" name="pestoSauce" /></label>
-															  <label class="checkbox-inline">
-															    <input type="checkbox" class="radio" value="pesto sauce" where="right" name="pestoSauce" /></label>
-													    </td>
-													    <td>
-													   		<select class="form-control" id="amountPestoSauce">
-																	<option value="normal">Normal</option>
-																  <option value="light">Light</option>
-																  <option value="extra">Extra</option>
-																  <option value="xxtra">Xxtra</option>
-																  <option value="side">Side</option>
-																</select>
-													   	</td>
-												    </tr>
-												  </tbody>
-												</table>
-								      </div>
-								    </div>
-								  </div>
-								  <hr>
-								  <div class="card">
-								    <div class="card-header" role="tab" id="headingInstructions">
-								      <h5 class="mb-0">
-								        <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseInstructions" aria-expanded="false" aria-controls="collapseInstructions">
+								        <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseInstructionsSteak" aria-expanded="false" aria-controls="collapseInstructionsSteak">
 								          Instructions<span class="caret"></span>
 								        </a>
 								      </h5>
 								    </div>
-								    <div id="collapseInstructions" class="collapse" role="tabpanel" aria-labelledby="headingInstructions">
+								    <div id="collapseInstructionsSteak" class="collapse" role="tabpanel" aria-labelledby="headingInstructionsSteak">
 								      <div class="card-block">
 								      	<table class="table">
 												  <thead>
 												    <tr>
-												      <th>Cooked:</th>
-												      <th>Light/Normal/Extra/Xxtra</th>
+												      <th class="cooked">Toasted</th>
+												      <th class="cooked">Lightly Toasted</th>
+												      <th class="cooked">Extra Toasted</th>
+												      <th class="cooked">Xxtra Toasted</th>
+												      <th class="cooked">Don't Cut</th>
 												    </tr>
 												  </thead>
 												  <tbody>
 												    <tr>
-												    	<td>Well Done</td>
+												    	<td>
+												    		<label class="checkbox-inline">
+																	<input type="checkbox" class="radio" value="toasted" name="cooked" /></label>
+												    	</td>
 												      <td>
 												      	<label class="checkbox-inline">
-																	<input type="checkbox" class="radio" value="light well done" name="cooked" /></label>
+																	<input type="checkbox" class="radio" value="lightly toasted" name="cooked" /></label>
+															</td>
+															<td>
 																<label class="checkbox-inline">
-																  <input type="checkbox" class="radio" value="well done" name="cooked" /></label>
+																  <input type="checkbox" class="radio" value="extra toasted" name="cooked" /></label>
+															</td>
+															<td>
 																<label class="checkbox-inline">
-																  <input type="checkbox" class="radio" value="extra well done" name="cooked" /></label>
+																  <input type="checkbox" class="radio" value="xxtra toasted" name="cooked" /></label>
+															</td>
+															<td>
 																<label class="checkbox-inline">
-																  <input type="checkbox" class="radio" value="xxtra well done" name="cooked" /></label>	
-												      </td>
-														</tr>
-														<tr>
-												    	<td>Light Cooked</td>
-												      <td>
-												      	<label class="checkbox-inline">
-																	<input type="checkbox" class="radio" value="light light cooked" name="cooked" /></label>
-																<label class="checkbox-inline">
-																  <input type="checkbox" class="radio" value="light cooked" name="cooked" /></label>
-																<label class="checkbox-inline">
-																  <input type="checkbox" class="radio" value="extra light cooked" name="cooked" /></label>
-																<label class="checkbox-inline">
-																  <input type="checkbox" class="radio" value="xxtra light cooked" name="cooked" /></label>	
-												      </td>
-														</tr>
-														<tr>
-												    	<td>Chinga Su Madre</td>
-												      <td>
-																<label class="checkbox-inline">
-																  <input type="checkbox" class="radio" value="chinga" name="cooked" /></label>
+																  <input type="checkbox" class="radio" value="don't cut" name="cut" /></label>	
 												      </td>
 														</tr>
 													</tbody>
