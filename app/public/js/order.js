@@ -38,7 +38,7 @@ $(document).ready(function() {
 		$('form').each(function(){
 	    Form.push($(this).find(':input'));
 		});
-		console.log(Form);
+		console.log(Form[0]);
 		//Iterates through form results
 		for(var i = 0; i < Form[0].length; i++)
 		{
@@ -47,8 +47,8 @@ $(document).ready(function() {
 			{
 				//Push the value onto the checked array (value is size, crust, then toppings)
 				Checked.push(Form[0][i].value);
-				//Start at 6th since 0 through 5 are used for 3 sizes and 3 crusts.  170 is the end of the toppings choices
-				if(i > 5 && i < 170)
+				//Start at 6th since 0 through 5 are used for 3 sizes and 3 crusts.  102 is the end of the toppings choices
+				if(i > 5 && i < 102)
 				{
 					/*Each topping has 4 fields: left, all, right, and extra.  If the left box is checked,
 					  the extra position for that topping is 3 spaces offset in the form array.  All
@@ -146,12 +146,78 @@ $(document).ready(function() {
 		var defaultToppings = menu.pizza[currentItem].toppings;
 		$(".form-control").val("normal");
 		$("#numPizza").val("1");
-
+		$('#uniqueToppings').empty();
+		$('#regularToppings').empty();
+		$('#specialtyToppings').empty();
+		$('#sauceCheese').empty();
+		for(var i = 0; i < defaultToppings.length; i++)
+		{
+			var toppingHTML = '<tr>'
+							  + '<td>' + defaultToppings[i] + '</td>'
+							  + '<td>'
+							  +  	'<label class="checkbox-inline">'
+								+    		'<input type="checkbox" class="radio" value="' + defaultToppings[i] + '" where="left" name="' + defaultToppings[i] + '" /></label>'
+								+    	'<label class="checkbox-inline">'
+								+		    '<input type="checkbox" class="radio" value="' + defaultToppings[i] + '" where="all" name="' + defaultToppings[i] + '" /></label>'
+								+		  '<label class="checkbox-inline">'
+								+		    '<input type="checkbox" class="radio" value="' + defaultToppings[i] + '" where="right" name="' + defaultToppings[i] + '" /></label>'
+								+    '</td>'
+								+    '<td>'
+								+   		'<select class="form-control" id="amount' + defaultToppings[i] + '">'
+								+				'<option value="normal">Normal</option>'
+								+			  '<option value="light">Light</option>'
+								+			  '<option value="extra">Extra</option>'
+								+			  '<option value="xxtra">Xxtra</option>'
+								+			  '<option value="side">Side</option>'
+								+			'</select>'
+								+  	'</td>'
+							  + '</tr>';
+			$('#uniqueToppings').append(toppingHTML);
+		}
+		for(var i = 0; i < menu.pizza.toppings.length; i++)
+		{
+			if(contains(menu.pizza.toppings[i], defaultToppings))
+			{
+				var toppingHTML = '<tr>'
+								  +    '<td>' + menu.pizza.toppings[i] + '</td>'
+								  +    '<td>'
+								  +    '<label class="checkbox-inline">'
+									+    		'<input type="checkbox" class="radio" value="' + menu.pizza.toppings[i] + '" where="left" name="' + menu.pizza.toppings[i] + '" /></label>'
+									+    '<label class="checkbox-inline">'
+									+		    '<input type="checkbox" class="radio" value="' + menu.pizza.toppings[i] + '" where="all" name="' + menu.pizza.toppings[i] + '" /></label>'
+									+		 '<label class="checkbox-inline">'
+									+		    '<input type="checkbox" class="radio" value="' + menu.pizza.toppings[i] + '" where="right" name="' + menu.pizza.toppings[i] + '" /></label>'
+									+    '</td>'
+									+    '<td>'
+									+   	'<select class="form-control" id="amount' + menu.pizza.toppings[i] + '">'
+									+			'<option value="normal">Normal</option>'
+									+			'<option value="light">Light</option>'
+									+			'<option value="extra">Extra</option>'
+									+			'<option value="xxtra">Xxtra</option>'
+									+			'<option value="side">Side</option>'
+									+		'</select>'
+									+   '</td>'
+								  +  '</tr>'
+				if(menu.pizza.allToppingsPrices[menu.pizza.toppings[i]] == 3.00)
+				{
+					$('#regularToppings').append(toppingHTML);
+				}
+				else if(menu.pizza.allToppingsPrices[menu.pizza.toppings[i]] == 4.00)
+				{
+					$('#specialtyToppings').append(toppingHTML);
+				}
+				else
+				{
+					$('#sauceCheese').append(toppingHTML);
+				}
+			}
+		}
 		$(':input[type="checkbox"]').prop("checked", false);
 		for(var i = 0; i < defaultToppings.length; i++)
 		{
 			$(':input[value="' + defaultToppings[i] + '"][where="all"]').prop("checked", true);
 		}
+		
 	});
 	//Set the type of steak selected by the user
 	$(".steakType").on('click', function() {
@@ -161,7 +227,8 @@ $(document).ready(function() {
 		$(".thisItem").text(currentItem);
 	});
 	//Unchecks checkboxes in same name group if another is selected (ex. user picks left pepperoni, then changes to all)
-	$("input:checkbox").on('click', function() {
+	$('#pizzaForm').on('click', 'input:checkbox', function() {
+		console.log("happened");
 	  var $box = $(this);
 	  if ($box.is(":checked")) {
 	    var group = "input:checkbox[name='" + $box.attr("name") + "']";
@@ -173,4 +240,13 @@ $(document).ready(function() {
 	  }
 	  changed = true;
 	});
+	function contains(topping, array) {
+    var i = array.length;
+    while (i--) {
+       if (array[i] == topping) {
+           return false;
+       }
+    }
+    return true;
+	}
 });

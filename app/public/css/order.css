@@ -43,3 +43,7 @@ label.checkbox-inline {
 button[type='button'] {
 	float: right;
 }
+
+#cooked {
+	font-size: 12px;
+}

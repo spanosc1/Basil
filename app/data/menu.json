@@ -2,8 +2,8 @@
 	"pizza": {
 		"Cheese": {
 			"price": [
-				14.99,
-				15.99,
+				12.95,
+				14.95,
 				9.99
 			],
 			"toppings": [
@@ -11,12 +11,13 @@
 				"pizza cheese"
 			]
 		},
-		"Tommy's Special": {
+		"Pete's Special": {
 			"price": [
-				19.95
+				21.95,
+				23.95
 			],
 			"toppings": [
-				"pizza sauce",
+				"steak",
 				"mushrooms",
 				"onion",
 				"hot peppers"
@@ -24,42 +25,30 @@
 		},
 		"Margarita": {
 			"price": [
-				17.95
+				18.95,
+				21.95
 			],
 			"toppings": [
-				"fresh tomato sauce",
 				"plum tomato",
 				"fresh mozzarella"
 			]
 		},
 		"White": {
 			"price": [
-				16.95
+				19.95,
+				21.95
 			],
 			"toppings": [
-				"pizza cheese",
 				"ricotta",
 				"fresh mozzarella"
 			]
 		},
-		"Stuffed": {
-			"price": [
-				21.95
-			],
-			"toppings": [
-				"pizza sauce",
-				"sausage",
-				"pepperoni",
-				"ham",
-				"bacon"
-			]
-		},
 		"The Works": {
 			"price": [
-				20.95
+				21.95,
+				23.95
 			],
 			"toppings": [
-				"pizza sauce",
 				"sausage",
 				"pepperoni",
 				"mushrooms",
@@ -67,12 +56,12 @@
 				"green peppers"
 			]
 		},
-		"MeatLovers": {
+		"Meat Lovers": {
 			"price": [
-				20.95
+				21.95,
+				23.95
 			],
 			"toppings": [
-				"pizza sauce",
 				"sausage",
 				"pepperoni",
 				"ham",
@@ -81,20 +70,20 @@
 		},
 		"Hawaiian": {
 			"price": [
-				18.95
+				18.95,
+				19.95
 			],
 			"toppings": [
-				"pizza sauce",
 				"pineapple",
 				"ham"
 			]
 		},
 		"Veggie": {
 			"price": [
-				19.95
+				19.95,
+				23.95
 			],
 			"toppings": [
-				"pizza sauce",
 				"mushrooms",
 				"spinach",
 				"broccoli",
@@ -103,20 +92,19 @@
 		},
 		"Cheesesteak": {
 			"price": [
-				19.95
+				19.95,
+				21.95
 			],
 			"toppings": [
-				"pizza sauce",
-				"pizza cheese",
 				"steak"
 			]
 		},
 		"Chicken Ranch": {
 			"price": [
-				19.95
+				19.95,
+				23.95
 			],
 			"toppings": [
-				"pizza cheese",
 				"bacon",
 				"ranch dressing",
 				"diced tomato",
@@ -125,17 +113,18 @@
 		},
 		"Biffalo Chicken": {
 			"price": [
-				19.95
+				19.95,
+				23.95
 			],
 			"toppings": [
 				"buffalo sauce",
-				"pizza cheese",
 				"chicken"
 			]
 		},
 		"Chicken Pesto": {
 			"price": [
-				19.95
+				19.95,
+				23.95
 			],
 			"toppings": [
 				"pesto sauce",
@@ -144,71 +133,69 @@
 		},
 		"Artichoke and Spinach": {
 			"price": [
+				20.95,
 				22.95
 			],
 			"toppings": [
-				"pizza cheese",
 				"spinach",
 				"artichoke"
 			]
 		},
 		"Italian": {
 			"price": [
-				19.95
+				19.95,
+				21.95
 			],
 			"toppings": [
-				"pizza sauce",
-				"pizza cheese",
-				"sausage",
+				"grilled sausage",
 				"onion",
 				"green peppers"
 			]
 		},
-		"Seafood": {
+		"Chicken Bruschetta": {
 			"price": [
+				19.95,
 				21.95
 			],
 			"toppings": [
-				"pizza sauce",
-				"pizza cheese",
-				"clams",
-				"calamari",
-				"shrimp"
+				"diced tomato",
+				"chicken"
 			]
 		},
 		"Eggplant": {
 			"price": [
-				18.95
+				19.95,
+				21.95
 			],
 			"toppings": [
+				"ricotta",
 				"pizza sauce",
-				"pizza cheese",
 				"eggplant"
 			]
 		},
 		"Grandma": {
 			"price": [
-				19.95
+				19.95,
+				21.95
 			],
 			"toppings": [
-				"fresh tomato sauce",
-				"pizza cheese",
+				"pecorino ramano",
 				"plum tomato",
 				"fresh mozzarella"
 			]
 		},
 		"Sicilian": {
 			"price": [
-				17.95
+				17.95,
+				20.95
 			],
 			"toppings": [
-				"pizza sauce",
-				"pizza cheese"
 			]
 		},
 		"Chicken Caesar Salad": {
 			"price": [
-				19.95
+				19.95,
+				21.95
 			],
 			"toppings": [
 				"caesar dressing",
@@ -218,47 +205,55 @@
 				"chicken"
 			]
 		},
-		"Baked Ziti": {
+		"Lasagna": {
 			"price": [
-				18.95
+				19.95,
+				21.95
 			],
 			"toppings": [
-				"pizza cheese",
-				"pizza sauce",
-				"baked ziti",
-				"ricotta"
+				"meatball",
+				"ricotta",
+				"fresh tomato sauce"
 			]
 		},
-		"Margarita Special": {
+		"Vodka": {
 			"price": [
-				19.95
+				16.00,
+				20.00
 			],
 			"toppings": [
-				"pesto sauce",
-				"plum tomato",
-				"zucchini",
+				"heavy cream",
+				"onion",
 				"fresh mozzarella",
-				"eggplant"
+				"fresh tomato sauce"
 			]
 		},
 		"Taco Pizza": {
 			"price": [
-				19.95
+				19.95,
+				21.95
 			],
 			"toppings": [
-				"mozzarella",
-				"gorgonzola",
-				"provolone",
-				"american cheese"
 			]
 		},
-		"5 Cheese Potato Pie": {
+		"L and B Style": {
 			"price": [
-				19.95
+				18.00,
+				22.00
 			],
 			"toppings": [
-				"pizza cheese",
+				"fresh mozzarella",
 				"pizza sauce"
+			]
+		},
+		"Caprese": {
+			"price": [
+				16.00,
+				21.00
+			],
+			"toppings": [
+				"fresh tomato",
+				"fresh mozzarella"
 			]
 		},
 		"Gluten Free Pizza": {
@@ -270,7 +265,7 @@
 				"fresh tomato sauce"
 			]
 		},
-		"toppings": {
+		"allToppingsPrices": {
 			"extra cheese": 3.00,
 			"sausage": 3.00,
 			"pepperoni": 3.00,
@@ -281,7 +276,7 @@
 			"spinach": 3.00,
 			"broccoli": 3.00,
 			"onion": 3.00,
-			"green peppers": 3.00,
+			"green pepper": 3.00,
 			"anchovies": 3.00,
 			"ricotta": 4.00,
 			"hot peppers": 3.00,
@@ -306,12 +301,44 @@
 			"hot sopressata": 4.00,
 			"broccoli rabe": 4.00,
 			"prosciutto": 4.00,
-			"diez quattro": 0,
+			"grilled sausage": 3.00,
+			"pecorino ramano": 3.00,
+			"caesar dressing": 3.00,
+			"salad": 3.00,
+			"croutons": 3.00,
+			"heavy cream": 3.00,
 			"pizza sauce": 0,
 			"pizza cheese": 0,
 			"fresh tomato sauce": 0,
 			"buffalo sauce": 0,
 			"pesto sauce": 0
-		}
+		},
+		"toppings": [
+			"sausage",
+			"pepperoni",
+			"ham",
+			"olives",
+			"mushrooms",
+			"spinach",
+			"broccoli",
+			"onion",
+			"green pepper",
+			"anchovies",
+			"hot peppers",
+			"diced tomato",
+			"eggplant",
+			"bacon",
+			"ricotta",
+			"steak",
+			"chicken",
+			"meatball",
+			"broccoli rabe",
+			"pizza sauce",
+			"pizza cheese",
+			"fresh tomato sauce",
+			"buffalo sauce",
+			"pesto sauce"
+		]
+
 	}
 }
