@@ -44,6 +44,6 @@ button[type='button'] {
 	float: right;
 }
 
-#cooked {
+.cooked {
 	font-size: 12px;
 }

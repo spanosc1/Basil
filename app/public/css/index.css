@@ -4,7 +4,9 @@ html {
  
 body {
 }
- 
+
+
+/*********** HEADER ADJUSTMENT ***********/
 /* headers */
 .container h1 {
     font-family: 'Roboto Slab', serif;
@@ -44,31 +46,15 @@ body {
 }
 
 
-/*********** PRELOADER SCREEN ***********/
+/*********** PRELOADER IMAGE ***********/
 #PreLoader {
     position:fixed;
     top:0;  
     left:0;
     right:0;
     bottom:0;
-    z-index: 99; 
+    z-index: 1500; 
     background-color: white;
-}
-
-/* pre load text */
-#PreLoader #PreLoadText {
-    width: 100%;
-    text-align: center;
-}
-
-#PreLoader #PreLoadText h2 {
-    margin-top: 100px;
-    margin-bottom: -100px;
-    font-family: 'Roboto Slab', serif;
-    font-variant: small-caps;
-    font-weight: bold;
-    font-size: 45px;
-    letter-spacing: 4px;
 }
 
 /* background image */
@@ -76,49 +62,10 @@ body {
     height: 500px;
     width: 500px;
     margin: 50px auto;
-    background-image: url("/Welcome/Preload.png");
+    background-image: url("/Preload/Preload.png");
     background-size: cover;
     background-position: 50% 50%;
     background-repeat: no-repeat;
-}
-
-/* loader style */
-#PreLoader #Loader {
-  width: 180px;
-  height: 180px;
-  margin: auto;
-  position: relative;
-  top: 100px;
-}
-
-#PreLoader #Loader img {
-    margin-left: 50px;
-    margin-top: 50px;
-    height: 80px;
-    padding: 2px;
-    border: 3px solid black;
-    border-radius: 100%;
-    background-color: black;
-}
-
-/* spin function */
-#PreLoader #Loader  #Spinner.rotate {
-    -webkit-animation: spin 1.7s infinite linear;
-    animation: spin 1.7s infinite linear;
-}
-
-@-webkit-keyframes spin {
-    100% { -webkit-transform: rotate(360deg); }
-}
-@-moz-keyframes spin {
-    100% { -moz-transform: rotate(360deg); }
-}
-@keyframes spin {
-    100% {
-        -moz-transform:rotate(360deg);
-        -o-transform:rotate(360deg);
-        transform:rotate(360deg);
-    }
 }
 
 
@@ -172,11 +119,36 @@ body {
 }
 
 
+/******************** FIXED BUTTONS ********************/
+#FixedButton {
+    height: 60px;
+    width: 75px;
+    margin: auto;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 1400;
+    border: 2px solid black;
+    background-color: white;
+    box-shadow: 0.1px 4px 4px black;
+}
+
+#FixedButton #ButtonOne {
+    height: 56px;
+    width: 71px;
+    display: inline-block;
+    background-color: white;
+    background-image: url("/FixedButton/Home.png");
+    background-size: cover;
+    background-position: 50% 50%;
+}
+
+
 /******************** WELCOME SECTION ********************/
 #WelcomeSection {
     width: 100vw;
     height: 100vh;
-    background-image: url("/Welcome/Homescreen.png");
+    background-image: url("/Welcome/Homescreen.jpg");
     background-position: 50% 50%;
     background-size: cover;
     background-repeat: no-repeat;
@@ -189,11 +161,6 @@ body {
     color: black;
 }
 
-/* hidden */ 
-#WelcomeContainer #Hidden {
-    visibility: hidden;
-}
-
 /* chalkboard */
 #WelcomeContainer #Chalkboard #Img {
     /* position */
@@ -201,9 +168,9 @@ body {
     width: 400px;
     float: left;
     /* background */
-    background-image: url("/Welcome/Chalkboard.jpeg");
+    background-image: url("/Welcome/Blackboard.jpg");
     background-size: cover;
-    background-position: 0px -210px;
+    background-position: 0px -213px;
     /* style */
     border: 3px solid black;
     box-shadow: 0.1px 4px 4px black;
@@ -212,16 +179,16 @@ body {
 
 /* header */
 #WelcomeContainer #Chalkboard #Img #Sweet { 
-   margin-top: 80px;
+   width: 320px;
+   margin-left: auto;
+   margin-right: auto;
+   margin-top: 70px;
    padding-top: 5px;
    padding-bottom: 5px;
    font-weight: bold;
    font-variant: small-caps;
    font-size: 30px;
-}
-
-#WelcomeContainer #Chalkboard #Img #SBord {
-    border-bottom: 1px solid white;
+   border-bottom: 3px solid #DC6B2F;
 }
 
 #WelcomeContainer #Chalkboard #Img #SBP {
@@ -234,47 +201,41 @@ body {
 
 /* order section */
 #WelcomeContainer #Chalkboard #Img #Order {
-    height: 100px;
+    height: 120px;
     width: 320px;
-    margin-top: 20px;
+    margin-top: 15px;
     margin-right: auto;
     margin-left: auto;
     border: 1px solid white;
+    box-shadow: 0.1px 4px 4px black;
 }
 
-#WelcomeContainer #Chalkboard #Img #Order #Btn {
-    width: 100px;
+#WelcomeContainer #Chalkboard #Img #Order h3 {
+    padding-bottom: 5px;
+    margin-top: 5px;
     color: #DC6B2F;
-    background-color: #F3EED7;
-    border: 3px solid #DC6B2F;
-    border-radius: 0px;
-    outline: 1px solid white;
-    outline-offset: 3px;
+    border-bottom: 1px solid white;
 }
 
-#WelcomeContainer #Chalkboard #Img #Order #Btn h3 {
-    margin: auto;
-    display: inline-block;
-    position: relative;
-    top: 2px;
-    right: 8px;
+#WelcomeContainer #Chalkboard #Img #Order p {
+    width: 150px;
+    margin: 14px auto;
+    padding-left: 5px;
+    padding-top: 10px;
+    padding-bottom: 10px;
     font-weight: bold;
-    font-size: 15px;
-}
-
-#WelcomeContainer #Chalkboard #Img #Order #Btn img {
-    margin: auto;
-    display: inline-block;
-    position: relative;
-    right: 4px;
-    height: 25px;
+    font-size: 20px;
+    letter-spacing: 5px;
+    color: white;
+    border: 3px solid white;
+    box-shadow: 0.1px 4px 4px black;
 }
 
 /* special section */
 #WelcomeContainer #Chalkboard #Img #LargePizza {
     height: 100px;
     width: 320px;
-    margin-top: 30px;
+    margin-top: 25px;
     margin-right: auto;
     margin-left: auto;
 }
@@ -297,6 +258,8 @@ body {
     height: 100px;
     width: 320px;
     margin: auto;
+    position: relative;
+    top: -10px;
     border: 3px solid #DC6B2F;
     color: #DC6B2F;
 }
@@ -315,6 +278,522 @@ body {
     font-weight: bold;
     font-variant: small-caps;
 }
+
+/* animation alterations */ 
+#WelcomeContainer #Chalkboard.first-animation.slide-down.in-view {
+    transition-delay: 900ms;
+}
+
+#WelcomeContainer #Chalkboard #Img #Animation.first-animation.slide-down.in-view {
+    transition-delay: 1500ms;
+}
+
+
+/******************** ORDER SECTION ********************/
+#OrderSection {
+    width: 100%;
+    height: 850px;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    background-color: rgb(250,250,250);
+}  
+
+#OrderContainer {
+    width: 991px;
+    margin-top: 50px;
+    text-align: center;
+}
+
+/* header */
+#OrderContainer #Header {
+    color: black;
+    color: #DC6B2F;
+}
+
+#OrderContainer #Online {
+    font-family: 'Petit Formal Script', cursive;
+    font-size: 35px;
+}
+
+/* border under */
+#OrderContainer #Bord { 
+   width: 600px;
+}
+
+/* image */
+#OrderContainer #Image {
+    width: 900px;
+    height: 400px;
+    margin: 130px auto;
+    background-image: url("/Order/Smart.png");
+    background-position: 50% 50%;
+    background-size: cover;
+}
+
+/* desktop text */
+#OrderContainer #Image #Teaser {
+    position: relative;
+    top: 40px;
+    font-size: 30px;
+    font-weight: bold;
+    color: black;
+}
+
+#OrderContainer #Image #TeaserTwo {
+    font-size: 20px;
+    position: relative; 
+    top: 20px;
+    font-weight: bold;
+    color: black;
+}
+
+/* labtop button */
+#OrderContainer #Image #Button {
+    width: 255.5px;
+    height: 165px;
+    position: relative;
+    top: 83px;
+    right: 61.5px;
+    float: right;
+    border: 2px solid white;
+    background: linear-gradient( #DC6B2F, rgb(200,200,200));
+}
+
+#OrderContainer #Image #Button h2 {
+    color: black;
+    font-variant: small-caps;
+}
+
+/* ipad section */
+#OrderContainer #Ipad {
+    width: 128px;
+    height: 180px;
+    margin: auto;
+    position: relative;
+    top: 77px;
+    right: 315px;
+    border: 2px solid white;
+    background: linear-gradient( #DC6B2F, rgb(200,200,200));
+}
+
+#OrderContainer #Ipad h2 {
+    font-variant: small-caps;
+    font-size: 25px;
+    color: black;
+}
+
+#OrderContainer #Ipad #First {
+    margin-top: 40px;
+    letter-spacing: 10px;
+}
+
+#OrderContainer #Ipad #Border {
+    padding-left: 12px;
+    border-bottom: 1px solid black;
+    font-family: 'Petit Formal Script', cursive;
+    font-weight: bold;
+}
+
+/* animation alterations */
+#OrderContainer #Image.animation-element.slide-up.in-view {
+    transition-delay: 500ms;
+}
+
+
+/******************** LARGE PIZ SECTION ********************/
+#LargePizzaSection {
+    width: 100%;
+    height: 820px;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    background-image: url("/Specialties/Special.jpeg");
+    background-position: 50% 50%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}  
+
+#LargePizzaContainer {
+    margin-top: 50px;
+    text-align: center;
+    color: black;
+    font-variant: small-caps;
+}
+
+/* chalkboard */
+#LargePizzaSection #Chalkboard {
+    width: 1000px;
+    margin: auto;
+    position: relative;
+    top: -50px;
+}
+
+#LargePizzaSection #Chalkboard #Img {
+    height: 680px;
+    width: 400px;
+    float: right;
+    background-image: url("/Specialties/Blackboard.jpg");
+    background-position: 0px -110px;
+    background-size: cover;
+    border-right: 3px solid black;
+    border-left: 3px solid black;
+    border-bottom: 3px solid black;
+    box-shadow: 0.1px 4px 4px black;
+}
+
+/* header */
+#LargePizzaSection #Chalkboard #Img #First {
+    width: 320px;
+    margin: 20px auto;
+    color: #DC6B2F;
+    font-size: 50px;
+    border-bottom: 3px solid white;
+}
+
+#LargePizzaSection #Chalkboard #Img #Second {
+    width: 260px;
+    margin-top: -10px;
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: 5px;
+    padding-bottom: 5px;
+    color: white;
+    letter-spacing: 5px;
+    border: 1px solid white;
+}
+
+/* statement */
+#LargePizzaSection #Chalkboard #Statement {
+    width: 280px;
+    margin-top: 25px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+#LargePizzaSection #Chalkboard #Statement #Third {
+    margin: auto;
+    color: #DC6B2F;
+    font-variant: normal;
+}
+
+#LargePizzaSection #Chalkboard #Statement #Fourth  {
+    margin: auto;
+    color: white;
+    font-size: 20px;
+}
+
+/* order section */
+#LargePizzaSection #Chalkboard #Order {
+    width: 320px;
+    height: 130px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 25px;
+    border: 1px solid white;
+    box-shadow: 0.1px 4px 4px black;
+}
+
+#LargePizzaSection #Chalkboard #Order h3 {
+    padding-bottom: 10px;
+    position: relative;
+    top: -10px;
+    font-variant: normal;
+    color: #DC6B2F;
+    border-bottom: 1px solid white;
+}
+
+#LargePizzaSection #Chalkboard #Order p {
+    width: 130px;
+    margin: auto;
+    padding-left: 4px;
+    padding-bottom: 5px;
+    position: relative;
+    top: -7px;
+    font-variant: small-caps;
+    font-weight: bold;
+    font-size: 30px;
+    letter-spacing: 3px;
+    color: white;
+    border: 4px solid white;
+    box-shadow: 0.1px 4px 4px black;
+}
+
+#LargePizzaSection #Chalkboard #OrderForm:hover {
+    text-decoration: none;
+}
+
+/* teaser */
+#LargePizzaSection #Chalkboard #Teaser {
+    width: 280px;
+    margin-top: 25px;
+    margin-right: auto;
+    margin-left: auto;
+    padding-top: 10px;
+    padding-right: 0px;
+    padding-left: 0px;
+    border: 1px solid #DC6B2F;
+}
+
+#LargePizzaSection #Chalkboard #Teaser #Fifth {
+    font-size: 18.5px;
+    color: #DC6B2F;
+}
+
+/* button */
+#LargePizzaSection #Chalkboard #DownBtn {
+    margin-top: -30px;
+}
+
+/* animation alterations */ 
+#LargePizzaSection #Chalkboard #Img.animation-element.slide-from-right.in-view {
+    transition-delay: 300ms;
+}
+
+#LargePizzaSection #Chalkboard #Img #Animation.animation-element.slide-down.in-view {
+    transition-delay: 700ms;
+}
+
+
+/******************** SPECIAL SECTION ********************/
+#SpecialtiesSection {
+    width: 100%;
+    height: 800px;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    background-color: rgb(250,250,250);
+}  
+
+#SpecialtiesContainer {
+    width: 1350px;
+    margin-top: 50px;
+    text-align: center;
+    color: black;
+}
+
+/* header */
+#SpecialtiesContainer #Header {
+    letter-spacing: 1px;
+    word-spacing: 5px;
+    color: #DC6B2F;
+}
+
+#SpecialtiesContainer #Bord {
+    width: 1100px; 
+}
+
+#SpecialtiesContainer #Soon {
+    font-size: 35px; 
+    font-family: 'Petit Formal Script', cursive;
+}
+
+#SpecialtiesContainer #World {
+    font-size: 50px;
+    font-weight: bold;
+    font-variant: small-caps;
+}
+
+/* icons */ 
+#SpecialtiesContainer #Icons {
+    width: 100%; 
+    margin-top: 100px; 
+} 
+
+/* img */ 
+#SpecialtiesContainer #Icons .col-md-3 img {
+    width: 140px; 
+    height: 140px; 
+    padding: 2px; 
+    border: 1px solid black;
+    border-radius: 50%; 
+    background-color: black; 
+} 
+
+/* statement */ 
+#SpecialtiesContainer #Icons .col-md-3 #State { 
+    font-size: 25px; 
+    font-weight: bold;
+    color: #DC6B2F; 
+} 
+
+#SpecialtiesContainer #Icons .col-md-3 h3 { 
+    width: 300px; 
+    border-bottom: 3px solid black; 
+} 
+ 
+#SpecialtiesContainer #Icons .col-md-3 p { 
+    width: 260px;
+    height: 180px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: -10px; 
+    padding-top: 15px; 
+    padding-right: 10px; 
+    padding-left: 10px; 
+    text-align: justify; 
+    line-height: 1; 
+    font-size: 18px; 
+    border-bottom: 1px solid black;
+    border-right: 1px solid black;
+    border-left: 1px solid black;
+} 
+
+/* animation alterations */
+#SpecialtiesContainer #Icons #ColOne #One.animation-element.slide-from-left.in-view {
+    transition-delay: 500ms;
+}
+
+#SpecialtiesContainer #Icons #ColTwo #Two.animation-element.slide-from-right.in-view {
+    transition-delay: 500ms;
+}
+
+#SpecialtiesContainer #Icons #ColThree #Three.animation-element.slide-from-left.in-view {
+    transition-delay: 500ms;
+}
+
+#SpecialtiesContainer #Icons #ColFour #Four.animation-element.slide-from-right.in-view {
+    transition-delay: 500ms;
+}
+
+#SpecialtiesContainer #Icons .col-md-3 #Caption.animation-element.slide-up.in-view {
+    transition-delay: 700ms;
+}
+
+
+/******************** MENU SECTION ********************/
+#MenuSection {
+    width: 100%;
+    height: 820px;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    background-image: url("/Menu/Background.jpg");
+    background-position: 50% 50%;
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+
+#MenuContainer {
+    text-align: center;
+}
+
+/* chalkboard */
+#MenuContainer #Chalkboard {
+    margin: auto;
+}
+
+#MenuContainer #Chalkboard #Img {
+    height: 680px;
+    width: 400px;
+    float: left;
+    background-image: url("/Menu/Blackboard.jpg");
+    background-size: cover;
+    background-position: 0px -110px;
+    border-right: 3px solid black;
+    border-left: 3px solid black;
+    border-bottom: 3px solid black;
+    box-shadow: 0.1px 4px 4px black;
+}
+
+/* header */
+#MenuContainer #Chalkboard #First {
+    width: 320px;
+    margin: 15px auto;
+    color: #DC6B2F;
+    font-size: 50px;
+    letter-spacing: 5px;
+    border-bottom: 3px solid white;
+}
+
+/* statement */
+#MenuContainer #Chalkboard #Statement {
+    width: 320px;
+    margin: auto;
+    padding-top: 10px;
+    padding-right: 10px;
+    padding-left: 10px;
+    text-align: justify;
+    font-variant: small-caps;
+    font-size: 18px;
+    line-height: 1.2;
+    color: white;
+    border: 1px solid #DC6B2F;
+}
+
+/* order */
+#MenuContainer #Chalkboard #Order {
+    width: 300px;
+    margin: 40px auto;
+    border: 1px solid white;
+    box-shadow: 0.1px 4px 4px black;
+}
+
+#MenuContainer #Chalkboard #OrderForm:hover {
+    text-decoration: none;
+}
+
+#MenuContainer #Chalkboard #Order h3 {
+    padding-top: 0px;
+    padding-bottom: 10px;
+    position: relative;
+    top: -10px;
+    font-size: 20px;
+    color: #DC6B2F;
+    border-bottom: 1px solid white;
+}
+
+#MenuContainer #Chalkboard #Order p {
+    width: 150px;
+    margin: 10px auto;
+    padding-bottom: 5px;
+    font-variant: small-caps;
+    font-weight: bold;
+    font-size: 30px;
+    letter-spacing: 3px;
+    color: white;
+    border: 3px solid white;
+    box-shadow: 0.1px 4px 4px black;
+}
+
+/* teaser */
+#MenuContainer #Chalkboard #Teaser {
+    color: #DC6B2F;
+    font-size: 25px;
+    margin-top: -15px;
+}
+
+#MenuContainer #Chalkboard #Teaser p {
+    line-height: 1;
+    margin: auto;
+    font-variant: small-caps;
+}
+
+#MenuContainer #Chalkboard #Teaser #One {
+    margin-top: 20px;
+}
+
+/* button */
+#MenuContainer #Chalkboard #Button {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #777F7C;
+    border: 3px solid white;
+    outline: 1px solid white;
+    outline-offset: 5px;
+}
+
+#MenuContainer #Chalkboard #Button img {
+    height: 50px;
+}
+
+/* animation alteration */
+#MenuContainer #Chalkboard #Img.animation-element.slide-from-right.in-view {
+    transition-delay: 300ms;
+}
+
+#MenuContainer #Chalkboard #Img #Animation.animation-element.slide-down.in-view {
+    transition-delay: 700ms;
+}
+
 
 /******************** ABOUT SECTION ********************/
 #AboutSection {
@@ -408,23 +887,23 @@ body {
 }
 
 #AboutContainer #Carousel #SlideOne #Image {
-   background-image: url("/About/Carousel/One.png");
+   background-image: url("/About/Carousel/One.jpg");
 }
 
 #AboutContainer #Carousel #SlideTwo #Image {
-   background-image: url("/About/Carousel/Two.png");
+   background-image: url("/About/Carousel/Two.jpg");
 }
 
 #AboutContainer #Carousel #SlideThree #Image {
-   background-image: url("/About/Carousel/Three.png");
+   background-image: url("/About/Carousel/Three.jpg");
 }
 
 #AboutContainer #Carousel #SlideFour #Image {
-   background-image: url("/About/Carousel/Four.png");
+   background-image: url("/About/Carousel/Four.jpg");
 }
 
 #AboutContainer #Carousel #SlideFive #Image {
-   background-image: url("/About/Carousel/Five.png");
+   background-image: url("/About/Carousel/Five.jpg");
 }
 
 /* carousel text */
@@ -474,7 +953,6 @@ body {
    animation: fade5 25s infinite;
    -webkit-animation: fade5 25s infinite;
 }
-
 
 @keyframes fade
 {
@@ -582,428 +1060,15 @@ body {
 }
 
 
-/******************** LARGE PIZ SECTION ********************/
-#LargePizzaSection {
-    width: 100%;
-    height: 600px;
-    border-top: 1px solid black;
-    border-bottom: 1px solid black;
-    background-image: url("/Specialties/Special.jpeg");
-    background-position: 50% 50%;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-}  
-
-#LargePizzaContainer {
-    margin-top: 50px;
-    text-align: center;
-    color: black;
-    font-variant: small-caps;
-}
-
-/* chalkboard */
-#LargePizzaSection #Chalkboard {
-    width: 1000px;
-    margin: auto;
-    position: relative;
-    top: -50px;
-}
-
-#LargePizzaSection #Chalkboard #Img {
-    height: 547px;
-    width: 350px;
-    float: right;
-    background-image: url("/Specialties/Chalkboard.jpeg");
-    background-position: 0px -145px;
-    background-size: cover;
-    border-right: 3px solid black;
-    border-left: 3px solid black;
-    border-bottom: 3px solid black;
-    box-shadow: 0.1px 4px 4px black;
-}
-
-/* header */
-#LargePizzaSection #Chalkboard #Img #First {
-    width: 280px;
-    margin: 20px auto;
-    color: #DC6B2F;
-    font-size: 50px;
-    border-bottom: 3px solid white;
-}
-
-#LargePizzaSection #Chalkboard #Img #Second {
-    width: 260px;
-    margin-top: -10px;
-    margin-right: auto;
-    margin-left: auto;
-    padding-left: 5px;
-    padding-bottom: 5px;
-    color: white;
-    letter-spacing: 5px;
-    border: 1px solid white;
-}
-
-/* statement */
-#LargePizzaSection #Chalkboard #Statement {
-    width: 280px;
-    margin-top: 35px;
-    margin-right: auto;
-    margin-left: auto;
-}
-
-#LargePizzaSection #Chalkboard #Statement #Third {
-    margin: auto;
-    color: #DC6B2F;
-    font-variant: normal;
-}
-
-#LargePizzaSection #Chalkboard #Statement #Fourth  {
-    margin: auto;
-    color: white;
-    font-size: 20px;
-}
-
-/* teaser */
-#LargePizzaSection #Chalkboard #Teaser {
-    width: 280px;
-    margin-top: 35px;
-    margin-right: auto;
-    margin-left: auto;
-    padding-top: 10px;
-    padding-right: 0px;
-    padding-left: 0px;
-    border: 1px solid #DC6B2F;
-}
-
-#LargePizzaSection #Chalkboard #Teaser #Fifth {
-    font-size: 18.5px;
-    color: #DC6B2F;
-}
-
-/* button */
-#LargePizzaSection #Chalkboard #DownBtn {
-    margin-top: -30px;
-}
-
-  
-/******************** SPECIAL SECTION ********************/
-#SpecialtiesSection {
-    width: 100%;
-    height: 800px;
-    border-top: 1px solid black;
-    border-bottom: 1px solid black;
-    background-color: rgb(250,250,250);
-}  
-
-#SpecialtiesContainer {
-    width: 1350px;
-    margin-top: 50px;
-    text-align: center;
-    color: black;
-}
-
-/* header */
-#SpecialtiesContainer #Header {
-    letter-spacing: 1px;
-    word-spacing: 5px;
-    color: #DC6B2F;
-}
-
-#SpecialtiesContainer #Bord {
-    width: 1100px; 
-}
-
-#SpecialtiesContainer #Soon {
-    font-size: 35px; 
-    font-family: 'Petit Formal Script', cursive;
-}
-
-#SpecialtiesContainer #World {
-    font-size: 50px;
-    font-weight: bold;
-    font-variant: small-caps;
-}
-
-/* icons */ 
-#SpecialtiesContainer #Icons {
-    width: 100%; 
-    margin-top: 100px; 
-} 
-
-/* img */ 
-#SpecialtiesContainer #Icons .col-md-3 img {
-    width: 140px; 
-    height: 140px; 
-    padding: 2px; 
-    border: 1px solid black;
-    border-radius: 50%; 
-    background-color: black; 
-} 
-
-/* statement */ 
-#SpecialtiesContainer #Icons .col-md-3 #State { 
-    font-size: 25px; 
-    font-weight: bold;
-    color: #DC6B2F; 
-} 
-
-#SpecialtiesContainer #Icons .col-md-3 h3 { 
-    width: 300px; 
-    border-bottom: 3px solid black; 
-} 
- 
-#SpecialtiesContainer #Icons .col-md-3 p { 
-    width: 260px;
-    height: 180px;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: -10px; 
-    padding-top: 15px; 
-    padding-right: 10px; 
-    padding-left: 10px; 
-    text-align: justify; 
-    line-height: 1; 
-    font-size: 18px; 
-    border-bottom: 1px solid black;
-    border-right: 1px solid black;
-    border-left: 1px solid black;
-    
-} 
-
-/* animation alterations */
-#SpecialtiesContainer #Icons #ColOne #One.animation-element.slide-from-left.in-view {
-    transition-delay: 500ms;
-}
-
-#SpecialtiesContainer #Icons #ColTwo #Two.animation-element.slide-from-right.in-view {
-    transition-delay: 500ms;
-}
-
-#SpecialtiesContainer #Icons #ColThree #Three.animation-element.slide-from-left.in-view {
-    transition-delay: 500ms;
-}
-
-#SpecialtiesContainer #Icons #ColFour #Four.animation-element.slide-from-right.in-view {
-    transition-delay: 500ms;
-}
-
-#SpecialtiesContainer #Icons .col-md-3 #Caption.animation-element.slide-up.in-view {
-    transition-delay: 700ms;
-}
-
-
-/******************** MENU SECTION ********************/
-#MenuSection {
-    width: 100%;
-    height: 600px;
-    border-top: 1px solid black;
-    border-bottom: 1px solid black;
-    background-image: url("/Menu/Background.png");
-    background-position: 50% 50%;
-    background-size: cover;
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-}
-
-#MenuContainer {
-    text-align: center;
-}
-
-#MenuContainer #hidden {
-    visibility: hidden; 
-}
-
-/* chalkboard */
-#MenuContainer #Chalkboard {
-    margin: auto;
-}
-
-#MenuContainer #Chalkboard #Img {
-    height: 500px;
-    width: 400px;
-    float: left;
-    background-image: url("/Menu/Chalkboard.jpeg");
-    background-size: cover;
-    background-position: 0px -290px;
-    border-right: 3px solid black;
-    border-left: 3px solid black;
-    border-bottom: 3px solid black;
-    box-shadow: 0.1px 4px 4px black;
-}
-
-/* header */
-#MenuContainer #Chalkboard #First {
-    width: 320px;
-    margin: 15px auto;
-    color: #DC6B2F;
-    font-size: 50px;
-    letter-spacing: 5px;
-    border-bottom: 3px solid white;
-}
-
-/* statement */
-#MenuContainer #Chalkboard #Statement {
-    width: 320px;
-    margin: auto;
-    padding-top: 10px;
-    padding-right: 10px;
-    padding-left: 10px;
-    text-align: justify;
-    font-variant: small-caps;
-    font-size: 18px;
-    line-height: 1.2;
-    color: white;
-    border: 1px solid white;
-}
-
-/* teaser */
-#MenuContainer #Chalkboard #Teaser {
-    color: #DC6B2F;
-    font-size: 40px;
-}
-
-#MenuContainer #Chalkboard h3 {
-    margin: auto;
-    font-weight: bold;
-}
-
-#MenuContainer #Chalkboard #One {
-    margin-top: 20px;
-}
-
-/* button */
-#MenuContainer #Chalkboard #Button {
-    margin-top: 20px;
-    padding: 10px;
-    background-color: #777F7C;
-    border: 3px solid white;
-    outline: 1px solid white;
-    outline-offset: 5px;
-}
-
-#MenuContainer #Chalkboard #Button img {
-    height: 50px;
-}
-
-
-/******************** ORDER SECTION ********************/
-#OrderSection {
-    width: 100%;
-    height: 850px;
-    border-top: 1px solid black;
-    border-bottom: 1px solid black;
-    background-color: rgb(250,250,250);
-}  
-
-#OrderContainer {
-    margin-top: 50px;
-    text-align: center;
-}
-
-/* header */
-#OrderContainer #Header {
-    color: black;
-    color: #DC6B2F;
-}
-
-#OrderContainer #Online {
-    font-family: 'Petit Formal Script', cursive;
-    font-size: 35px;
-}
-
-/* border under */
-#OrderContainer #Bord { 
-   width: 600px;
-}
-
-/* image */
-#OrderContainer #Image {
-    width: 1000px;
-    height: 400px;
-    margin: 130px auto;
-    background-image: url("/Order/Smart.png");
-    background-position: 50% 50%;
-    background-size: cover;
-}
-
-/* desktop text */
-#OrderContainer #Image #Teaser {
-    position: relative;
-    top: 40px;
-    font-size: 30px;
-    font-weight: bold;
-}
-
-#OrderContainer #Image #TeaserTwo {
-    font-size: 20px;
-    position: relative; 
-    top: 20px;
-    font-weight: bold;
-}
-
-/* labtop button */
-#OrderContainer #Image #Button {
-    width: 261px;
-    height: 169px;
-    position: relative;
-    top: 84.5px;
-    right: 103.5px;
-    float: right;
-    border: 2px solid white;
-    background: linear-gradient( #DC6B2F, rgb(200,200,200));
-}
-
-#OrderContainer #Image #Button h2 {
-    color: black;
-    font-variant: small-caps;
-}
-
-/* ipad section */
-#OrderContainer #Ipad {
-    width: 132px;
-    height: 183px;
-    margin: auto;
-    position: relative;
-    top: 80px;
-    right: 321px;
-    border: 2px solid white;
-    background: linear-gradient( #DC6B2F, rgb(200,200,200));
-}
-
-#OrderContainer #Ipad h2 {
-    font-variant: small-caps;
-    font-size: 25px;
-    color: black;
-}
-
-#OrderContainer #Ipad #First {
-    margin-top: 40px;
-    letter-spacing: 10px;
-}
-
-#OrderContainer #Ipad #Border {
-    padding-left: 12px;
-    border-bottom: 1px solid black;
-    font-family: 'Petit Formal Script', cursive;
-    font-weight: bold;
-}
-
-/* animation alterations */
-#OrderContainer #Image.animation-element.slide-up.in-view {
-    transition-delay: 500ms;
-}
-
-
 /******************** STATEMENT SECTION ********************/
 #StatementSection {
     width: 100%;
-    height: 700px;
+    height: 820px;
     border-top: 1px solid black;
     border-bottom: 1px solid black;
     background-image: url("/Statement/Background.png");
     background-position: 50% 50%; 
-    background-size: cover;
+    background-size: cover; 
     background-repeat: no-repeat;
     background-attachment: fixed;
 }  
@@ -1014,46 +1079,112 @@ body {
     color: black;
 }
 
+/* chalkboard */
+#StatementContainer #Chalkboard {
+    margin: auto;
+    position: relative;
+    top: -150px;
+}
+
+#StatementContainer #Chalkboard #Img {
+    height: 625px;
+    width: 400px;
+    float: right;
+    background-image: url("/Statement/Blackboard.jpg");
+    background-size: cover;
+    background-position: 0px -162px;
+    border-right: 3px solid black;
+    border-left: 3px solid black;
+    border-bottom: 3px solid black;
+    box-shadow: 0.1px 4px 4px black;
+}
+
 /* header */
-#StatementContainer #Header {
+#StatementContainer #Chalkboard #Img #First {
+    width: 310px;
+    margin: 40px auto;
+    color: #DC6B2F;
+    font-size: 45px;
     font-weight: bold;
+    border-bottom: 3px solid white;
 }
 
-#StatementContainer #Bord {
-    margin-bottom: 80px;
-    width: 800px;
+#StatementContainer #Chalkboard #Img #Brooklyn {
+    font-family: 'Roboto Slab', serif;
+    font-size: 30px;
+    font-variant: small-caps;
+    font-weight: normal;
 }
 
-#StatementContainer #First {
-    font-family: 'Petit Formal Script', cursive;
-    font-size: 35px;
+#StatementContainer #Chalkboard #Img #Second {
+    font-variant: small-caps;
+    font-size: 40px;
+    color: white;
+    font-weight: bold;
 }
 
 /* statement */
-#StatementContainer #Statement {
-    width: 800px;
-    margin: auto;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    padding-right: 20px;
-    padding-left: 20px;
-    text-align: justify;
+#StatementContainer #Chalkboard #Img #Statement {
+    width: 280px;
+    margin: 10px auto;
+    padding-top: 5px;
+    padding-right: 10px;
+    padding-left: 10px;
+    border: 3px solid #DC6B2F;
+}
+
+#StatementContainer #Chalkboard #Img #Statement #Third {
     font-variant: small-caps;
-    font-weight: bold;
-    border: 1px solid black;
-    box-shadow: 0.1px 4px 4px black;
-    background-color: rgba(200,200,200,0.6);
-}
-
-#StatementContainer #Statement p {
     font-size: 20px;
-    line-height: 1;
+    line-height: 1.2;
+    color: white;
 }
 
-/* animations */
-#StatementContainer #Statement.animation-element.slide-up.in-view {
-    transition-delay: 500ms;
+/* order section */
+#StatementContainer #Chalkboard #Img #Order {
+    width: 310px;
+    height: 133px;
+    margin: 40px auto;
+    border: 1px solid white;
+    box-shadow: 0.1px 4px 4px black;
 }
+
+#StatementContainer #Chalkboard #Img #OrderForm:hover {
+    text-decoration: none;
+}
+
+#StatementContainer #Chalkboard #Img #Order h3 {
+    padding-bottom: 10px;
+    position: relative;
+    top: -10px;
+    color: #DC6B2F;
+    border-bottom: 1px solid white; 
+}
+
+#StatementContainer #Chalkboard #Img #Order p {
+    width: 150px;
+    margin: auto;
+    padding-left: 5px;
+    padding-bottom: 5px;
+    font-variant: small-caps;
+    font-size: 25px;
+    font-weight: bold;
+    letter-spacing: 3px;
+    color: white;
+    border: 3px solid white;
+    box-shadow: 0.1px 4px 4px black;
+}
+
+
+/* animation alteration */
+#StatementContainer #Chalkboard #Img.animation-element.slide-from-right.in-view {
+    transition-delay: 300ms;
+}
+
+#StatementContainer #Chalkboard #Img #Animation.animation-element.slide-down.in-view {
+    transition-delay: 700ms;
+}
+
 
 /******************** CONTACT SECTION ********************/
 #ContactSection {
@@ -1075,11 +1206,12 @@ body {
     color: #DC6B2F;
     letter-spacing: 5px;
     padding-left: 7px;
+    font-variant: small-caps;
 }
 
 #ContactContainer #Header #Sbp {
     font-family: 'Petit Formal Script', cursive;
-    font-size: 35px;
+    font-size: 55px;
     font-weight: bold;
 }
 
@@ -1113,17 +1245,34 @@ body {
     width: 220px;
     height: 150px;
     margin: auto;
-    padding-right: 10px;
-    padding-left: 10px;
-    padding-top: 5px;
+    padding-right: 0px;
+    padding-left: 0px;
+    padding-top: 15px;
     position: relative;
     top: -15px;
     font-size: 18px;
-    text-align: justify;
+    font-variant: small-caps;
+    line-height: 1.2;
+    text-align: center;
     color: black;
     border-right: 1px solid black;
     border-left: 1px solid black; 
     border-bottom: 1px solid black;
+}
+
+/* clock alteration */
+#ContactContainer #Icons .col-md-3 #Clock {
+    height: 81px;
+    position: relative;
+    left: 73px;
+    top: -3px;
+    z-index: 5;
+}
+
+#ContactContainer #Icons .col-md-3 #ClockBase {
+    position: relative;
+    right: 45px;
+    z-index: 1;
 }
 
 /* col-md-6 */
@@ -1350,9 +1499,10 @@ body {
 
 /* text adjustment */
 .navbar div li { 
+   width: 100px;
    font-family: "Courier New";
    font-size: 13px;
-   letter-spacing: 4px;
+   letter-spacing: 1px;
    display: inline-block; 
    float: none;
    vertical-align: top; 
@@ -1363,11 +1513,13 @@ body {
    font-variant: small-caps;
    font-weight: bold;
    border: 1px solid black;
+   text-align: center;
 }
 
 .navbar div li a {
-    padding-bottom: 8px;
-    padding-left: 17px;
+    margin: auto;
+    padding: auto;
+    text-align: center;
 }
 
 /* remove image */
@@ -1408,9 +1560,10 @@ nav button img {
 @media (max-width: 499px) {
 /******************** NAVBAR ********************/
 .navbar div li { 
+   width: 85px;
    font-family: "Courier New";
    font-size: 12px;
-   letter-spacing: 2px;
+   letter-spacing: 1px;
    display: inline-block; 
    float: none;
    vertical-align: top; 

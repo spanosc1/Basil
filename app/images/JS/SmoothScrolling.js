@@ -8,7 +8,7 @@ $(document).ready(function() {
 		
 		$('html, body').animate( {
 		   scrollTop: $(linkHref).offset().top - 60
-	    }, 1500);
+	    }, 800);
 	    
 		e.preventDefault();
 	

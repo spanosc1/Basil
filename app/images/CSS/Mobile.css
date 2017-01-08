@@ -1,0 +1,909 @@
+/******************** MEDIA 1349PX ********************/
+@media (max-width: 1349px) {
+/******************** SPECIAL SECTION ********************/
+#SpecialtiesSection {
+    height: 780px;
+}  
+
+#SpecialtiesContainer {
+    width: 1200px;
+}
+
+/* header */
+#SpecialtiesContainer #Header {
+    word-spacing: 4px;
+}
+
+#SpecialtiesContainer #Bord {
+    width: 1000px; 
+}
+
+#SpecialtiesContainer #Soon {
+    font-size: 30px; 
+}
+
+#SpecialtiesContainer #World {
+    font-size: 45px;
+}
+
+/* img */ 
+#SpecialtiesContainer #Icons .col-md-3 img {
+    width: 130px; 
+    height: 130px; 
+} 
+
+/* statement */ 
+#SpecialtiesContainer #Icons .col-md-3 #State { 
+    font-size: 20px; 
+} 
+
+#SpecialtiesContainer #Icons .col-md-3 #ColOne #State { 
+   padding-left: 11px;
+}
+
+#SpecialtiesContainer #Icons .col-md-3 h3 { 
+    width: 260px; 
+    position: relative;
+} 
+ 
+#SpecialtiesContainer #Icons .col-md-3 p { 
+    width: 240px;
+    height: 190px;
+    font-size: 17px; 
+}
+    
+}
+
+
+/******************** MEDIA 1200PX ********************/
+@media (max-width: 1200px) {
+/******************** PIZZA SECTION ********************/
+#LargePizzaSection #Chalkboard {
+    width: 980px;
+    right: 20px;
+}
+
+/******************** SPECIAL SECTION ********************/
+#SpecialtiesSection {
+    height: 740px;
+}  
+
+#SpecialtiesContainer {
+    width: 991px;
+}
+
+/* header */
+#SpecialtiesContainer #Bord {
+    width: 900px; 
+}
+
+#SpecialtiesContainer #Soon {
+    font-size: 25px; 
+}
+
+#SpecialtiesContainer #World {
+    font-size: 35px;
+}
+
+/* statement */ 
+#SpecialtiesContainer #Icons .col-md-3 #State { 
+    font-size: 17px; 
+} 
+
+#SpecialtiesContainer #Icons .col-md-3 #ColOne #State { 
+   padding-left: 5px;
+}
+
+#SpecialtiesContainer #Icons .col-md-3 h3 { 
+    width: 220px; 
+    position: relative;
+    right: 5px;
+} 
+ 
+#SpecialtiesContainer #Icons .col-md-3 p { 
+    width: 205px;
+    height: 185px;
+    font-size: 15px; 
+    text-align: justify;
+}
+
+}
+
+
+/******************** MEDIA 991PX ********************/ 
+@media (max-width: 991px) {
+/******************** WELCOME SECTION ********************/
+/* chalkboard */
+#WelcomeContainer #Chalkboard #Img {
+    /* position */
+    height: 500px;
+    width: 350px;
+    /* background */
+    background-position: 0px -190px;
+}
+
+/* header */
+#WelcomeContainer #Chalkboard #Img #Sweet { 
+   width: 280px;
+   padding-bottom: 2px;
+   font-size: 25px;
+}
+
+#WelcomeContainer #Chalkboard #Img #SBP {
+	margin-top: -5px;
+    font-size: 40px;
+}
+
+/* order section */
+#WelcomeContainer #Chalkboard #Img #Order {
+    height: 85px;
+    width: 280px;
+}
+
+#WelcomeContainer #Chalkboard #Img #Order p {
+    font-size: 18px;
+}
+
+#WelcomeContainer #Chalkboard #Img #Order #Btn {
+    width: 150px;
+    margin-top: -5px;
+    border: 2px solid #DC6B2F;
+    outline-offset: 1px;
+}
+
+#WelcomeContainer #Chalkboard #Img #Order #Btn h3 {
+    font-size: 18px;
+}
+
+/* special section */
+#WelcomeContainer #Chalkboard #Img #LargePizza {
+    width: 280px;
+}
+
+#WelcomeContainer #Chalkboard #Img #LargePizza h3 {
+	font-size: 20px;
+}
+
+/* location */
+#WelcomeContainer #Chalkboard #Img #Location {
+    height: 80px;
+    width: 280px;
+    top: -15px;
+}
+
+#WelcomeContainer #Chalkboard #Img #Location #First {
+    margin-top: 9px;
+}
+
+/******************** ORDER SECTION ********************/
+#OrderSection {
+    height: 720px;
+}  
+
+#OrderContainer {
+    width: 776px;
+}
+
+/* image */
+#OrderContainer #Image {
+    width: 740px;
+    height: 325px;
+    margin: 100px auto;
+}
+
+/* desktop text */
+#OrderContainer #Image #Teaser {
+    font-size: 26px;
+}
+
+/* labtop button */
+#OrderContainer #Image #Button {
+    width: 207px;
+    height: 134px;
+    top: 56.5px;
+    right: 55px;
+}
+
+/* ipad section */
+#OrderContainer #Ipad {
+    width: 104px;
+    height: 145px;
+    top: 53px;
+    right: 256px;
+}
+
+#OrderContainer #Ipad h2 {
+    font-size: 20px;
+}
+
+#OrderContainer #Ipad #First {
+    margin-top: 37px;
+}
+
+#OrderContainer #Ipad #Border {
+    padding-left: 14px;
+    font-size: 25px;
+}
+
+/******************** LARGE PIZ SECTION ********************/
+#LargePizzaSection {
+    height: 650px;
+}  
+
+/* chalkboard */
+#LargePizzaSection #Chalkboard {
+    width: 750px;
+}
+
+#LargePizzaSection #Chalkboard #Img {
+    height: 500px;
+    width: 350px;
+    background-position: 0px -190px;
+}
+
+/* header */
+#LargePizzaSection #Chalkboard #Img #First {
+    margin: 15px auto;
+}
+
+#LargePizzaSection #Chalkboard #Img #Second {
+    width: 255px;
+    margin-top: -8px;
+}
+
+/* statement */
+#LargePizzaSection #Chalkboard #Statement {
+    margin-top: 30px;
+}
+
+#LargePizzaSection #Chalkboard #Statement #Third {
+    line-height: 1;
+}
+
+#LargePizzaSection #Chalkboard #Statement #Fourth  {
+    line-height: 1;
+}
+
+/* teaser */
+#LargePizzaSection #Chalkboard #Teaser {
+    width: 270px;
+    margin-top: 30px;
+}
+
+#LargePizzaSection #Chalkboard #Teaser #Fifth {
+    font-size: 16.5px;
+}
+
+/* button */
+#LargePizzaSection #Chalkboard #DownBtn {
+    margin-top: -25px;
+}
+
+/******************** SPECIAL SECTION ********************/
+#SpecialtiesSection {
+    height: 1050px;
+}  
+
+#SpecialtiesContainer {
+    width: 776px;
+}
+
+/* header */
+#SpecialtiesContainer #Bord {
+    width: 750px; 
+}
+
+#SpecialtiesContainer #Soon {
+    font-size: 20px; 
+}
+
+#SpecialtiesContainer #World {
+    font-size: 30px;
+}
+
+/* column adjust */
+#SpecialtiesContainer #Icons .col-sm-6 {
+    margin-bottom: 50px;
+}
+
+/* icons */ 
+#SpecialtiesContainer #Icons {
+    margin-top: 80px; 
+} 
+
+/* statement */ 
+#SpecialtiesContainer #Icons .col-md-3 #State { 
+    font-size: 20px; 
+} 
+
+#SpecialtiesContainer #Icons .col-md-3 h3 { 
+    width: 300px; 
+    margin: auto;
+    position: relative;
+    top: 20px;
+    right: 0px;
+} 
+ 
+#SpecialtiesContainer #Icons .col-md-3 p { 
+    width: 280px;
+    height: 145px;
+    margin-top: 20px;
+}
+
+}
+
+/******************** MEDIA 767PX ********************/ 
+@media (max-width: 767px) {
+/******************** ORDER SECTION ********************/
+#OrderSection {
+    height: 575px;
+}  
+
+#OrderContainer {
+    width: 500px;
+} 
+
+/* header */
+#OrderContainer #Header {
+    font-size: 45px;
+}
+
+#OrderContainer #Online {
+    font-size: 30px;
+}
+
+#OrderContainer #Bord {
+    width: 450px;
+}
+
+/* image */
+#OrderContainer #Image {
+    width: 498px;
+    height: 230px;
+    margin: 100px auto;
+    position: relative; 
+    right: 15px;
+    background-position: -45px 0px;
+}
+
+/* desktop text */
+#OrderContainer #Image #Teaser {
+    display: none;
+}
+
+#OrderContainer #Image #TeaserTwo {
+    display: none;
+}
+
+/* new text */ 
+#OrderContainer #Image #MobileOne {
+    padding-right: 35px;
+    position: relative;
+    top: 20px;
+    font-family: 'Roboto Slab', serif;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: black;
+}
+
+#OrderContainer #Image #MobileOne::before {
+    content: "order online";
+    padding-left: 5px;
+    padding-right: 3px;
+    font-weight: bold;
+    border: 1px solid black;
+}
+
+#OrderContainer #Image #MobileOne::after { 
+   content: "10% savings";
+   margin: 5px auto;
+   display: table;
+}
+
+/* labtop button */
+#OrderContainer #Image #Button {
+    width: 146.5px;
+    height: 95px;
+    top: 46.5px;
+    right: 37.5px;
+}
+
+#OrderContainer #Image #Button h2 {
+    margin-top: 5px;
+    font-size: 25px;
+}
+
+#OrderContainer #Image #Button img { 
+   height: 45px;
+   margin-top: -5px;
+}
+
+/* ipad section */
+#OrderContainer #Ipad {
+    width: 73.5px;
+    height: 103px;
+    top: 43px;
+    right: 193px;
+}
+
+#OrderContainer #Ipad h2 {
+    font-size: 14px;
+}
+
+#OrderContainer #Ipad #First {
+    margin-top: 20px;
+    letter-spacing: 2px;
+}
+
+#OrderContainer #Ipad #Border {
+    padding-left: 5px;
+}
+
+/******************** LARGE PIZ SECTION ********************/
+/* chalkboard */
+#LargePizzaSection #Chalkboard {
+    width: 100%;
+}
+
+/******************** SPECIAL SECTION ********************/
+#SpecialtiesSection {
+    height: 1300px;
+}  
+
+#SpecialtiesContainer {
+    width: 500px;
+}
+
+/* header */
+#SpecialtiesContainer h1 {
+    border: 1px solid black;
+    padding-bottom: 25px;
+    box-shadow: 0.1px 4px 4px black;
+}
+
+#SpecialtiesContainer #Bord {
+    display: none;
+}
+
+#SpecialtiesContainer #Soon {
+    font-size: 25px; 
+}
+
+#SpecialtiesContainer #World {
+    display: table;
+    font-size: 35px;
+}
+
+/* icons */ 
+#SpecialtiesContainer #Icons {
+    width: 499px;
+    position: relative;
+    right: 15px;
+} 
+
+/* statement */ 
+#SpecialtiesContainer #Icons .col-md-3 #State { 
+    font-size: 20px; 
+} 
+
+#SpecialtiesContainer #Icons .col-sm-6 #MobileOne {
+    margin: auto;
+    display: table;
+}
+    
+#SpecialtiesContainer #Icons .col-md-3 h3 { 
+    width: 220px; 
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border: 3px solid black;
+} 
+ 
+#SpecialtiesContainer #Icons .col-md-3 p { 
+    width: 200px;
+    height: 185px;
+    margin-top: 20px;
+    font-size: 15px;
+    text-align: left;
+}
+
+}
+
+
+/******************** MEDIA 500PX ********************/ 
+@media (max-width: 500px) {
+/******************** WELCOME SECTION ********************/
+/* chalkboard */
+#WelcomeContainer #Chalkboard #Img {
+    /* position */
+    height: 400px;
+    width: 200px;
+    /* background */
+    background-position: -2px 2px;
+}
+
+/* header */
+#WelcomeContainer #Chalkboard #Img #Sweet { 
+   display: none;
+}
+
+#WelcomeContainer #Chalkboard #Img #SBP {
+	width: 150px;
+	margin-top: 80px;
+	margin-right: auto;
+	margin-left: auto;
+	padding-left: 10px;
+	border-bottom: 3px solid white;
+    font-size: 35px;
+}
+
+/* order section */
+#WelcomeContainer #Chalkboard #Img #Order {
+    height: 105px;
+    width: 150px;
+}
+
+#WelcomeContainer #Chalkboard #Img #Order p {
+    font-size: 15px;
+    text-transform: uppercase;
+    color: #DC6B2F;
+    font-weight: normal;
+}
+
+#WelcomeContainer #Chalkboard #Img #Order #Btn {
+    width: 100px;
+    margin-top: -5px;
+    border: 2px solid #DC6B2F;
+    outline-offset: 3px;
+}
+
+#WelcomeContainer #Chalkboard #Img #Order #Btn h3 {
+    padding-left: 0px;
+	position: relative;
+	right: 4px;
+    font-size: 16px;
+    letter-spacing: 2px;
+}
+
+/* special section */
+#WelcomeContainer #Chalkboard #Img #LargePizza {
+    width: 150px;
+    height: 60px;
+    margin-top: 10px;
+}
+
+#WelcomeContainer #Chalkboard #Img #LargePizza h3 {
+	font-size: 20px;
+	line-height: 1.5;
+	margin-top: 0px;
+}
+
+#WelcomeContainer #Chalkboard #Img #LargePizza #Large {
+	border-bottom: none;
+}
+
+#WelcomeContainer #Chalkboard #Img #LargePizza p {
+	font-size: 15px;
+	text-transform: uppercase;
+	border: 1px solid #DC6B2F;
+}
+
+/* location */
+#WelcomeContainer #Chalkboard #Img #Location {
+	display: none;
+}
+
+/******************** ORDER SECTION ********************/
+#OrderSection {
+    height: 575px;
+}  
+
+#OrderContainer {
+    width: 300px;
+} 
+
+/* header */
+#OrderContainer #Header {
+    font-size: 30px;
+}
+
+#OrderContainer #Online {
+    font-size: 20px;
+}
+
+#OrderContainer #Bord {
+    width: 250px;
+}
+
+/* image */
+#OrderContainer #Image {
+    width: 300px;
+    height: 140px;
+    margin: 60px auto;
+    right: 16px;
+    background-position: -30px 0px;
+}
+
+/* desktop text */
+#OrderContainer #Image #MobileOne {
+    padding-right: 24px;
+    top: 13px;
+    letter-spacing: 0px;
+}
+
+#OrderContainer #Image #MobileOne::before {
+    padding-left: 3px;
+    padding-right: 3px;
+    font-size: 15px;
+}
+
+/* laptop button */
+#OrderContainer #Image #Button {
+    width: 90px;
+    height: 58px;
+    top: 8px;
+    right: 22px;
+    font-variant: small-caps;
+    border: 1px solid white;
+}
+
+#OrderContainer #Image #Button h2 {
+    display: none;
+}
+
+#OrderContainer #Image #Button img { 
+   display: none;
+}
+
+/* new laptop text */
+#OrderContainer #Image #MobileTwo {
+    width: 90px;
+    float: right;
+    position: relative;
+    top: 15px;
+    left: 67px;
+    font-variant: small-caps;
+    color: black;
+}
+
+#OrderContainer #Image #MobileTwo::before { 
+   content: "SBP";
+   padding-left: 7px;
+   font-family: 'Petit Formal Script', cursive;
+   font-weight: bold;
+   letter-spacing: 5px;
+   border-bottom: 1px solid black;
+}
+
+#OrderContainer #Image #MobileTwo::after { 
+   content: "brooklyn"; 
+   margin: auto; 
+   display: table; 
+   font-family: 'Roboto Slab', serif; 
+} 
+ 
+/* ipad section */ 
+#OrderContainer #Ipad { 
+   width: 45.5px; 
+   height: 63px; 
+   top: 6px; 
+   right: 119px; 
+   font-family: 'Roboto Slab', serif;
+   font-variant: small-caps;
+   color: black;
+   border: 1px solid white;
+} 
+ 
+#OrderContainer #Ipad h2 { 
+    display: none; 
+} 
+ 
+#OrderContainer #Ipad #First { 
+    display: none; 
+} 
+ 
+#OrderContainer #Ipad #Border { 
+    display: none; 
+} 
+
+/* new ipad section */
+#OrderContainer #Ipad::before {
+    content: "450";
+    position: relative;
+    top: -40px;
+    font-size: 14px;
+}
+
+#OrderContainer #Ipad::after {
+    content: "5th Ave";
+    position: relative;
+    top: -40px;
+    margin: auto;
+    display: table;
+    font-size: 14px;
+}
+
+/* new order button */
+#OrderContainer #MobileThree {
+    width: 100%;
+    height: 100px;
+    margin-top: -10px;
+    padding-top: 15px;
+    background-color: rgb(230,230,230);
+    color: black;
+    border: 3px solid #DC6B2F;
+    outline: 1px solid black;
+    outline-offset: 3px;
+}
+
+#OrderContainer #MobileThree::before { 
+    content: "Click here to place an order."; 
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 5px;
+    font-family: 'Petit Formal Script', cursive;
+    font-weight: bold;
+    font-size: 15px;
+    border-bottom: 1px solid #DC6B2F;
+}
+
+#OrderContainer #MobileThree::after {
+    content: "continue"; 
+    margin: 20px auto;
+    padding-left: 7px;
+    padding-right: 5px;
+    padding-bottom: 1px;
+    display: table;
+    font-family: 'Roboto Slab', serif;
+    font-variant: small-caps;
+    font-weight: bold;
+    letter-spacing: 3px;
+    background-color: rgb(205,205,205);
+    border: 1px solid black;
+    box-shadow: 0.1px 4px 4px black;
+}
+
+/******************** LARGE PIZ SECTION ********************/
+#LargePizzaSection {
+    height: 550px;
+}  
+
+/* chalkboard */
+#LargePizzaSection #Chalkboard {
+    width: 100%;
+}
+
+#LargePizzaSection #Chalkboard #Img {
+    height: 400px;
+    width: 215px;
+    background-position: 0px -20px;
+}
+
+/* header */
+#LargePizzaSection #Chalkboard #Img #First {
+    width: 170px;
+    margin: 13px auto;
+    font-size: 40px;
+}
+
+#LargePizzaSection #Chalkboard #Img #Second {
+    width: 155px;
+    margin-top: -8px;
+    padding-left: 0px;
+    font-size: 20px;
+    letter-spacing: 1px;
+}
+
+/* statement */
+#LargePizzaSection #Chalkboard #Statement {
+    margin-top: 18px;
+    width: 155px
+}
+
+#LargePizzaSection #Chalkboard #Statement #Third {
+    line-height: 1;
+    font-size: 20px;
+}
+
+#LargePizzaSection #Chalkboard #Statement #Fourth  {
+    line-height: 1;
+    font-size: 15px;
+}
+
+/* teaser */
+#LargePizzaSection #Chalkboard #Teaser {
+    width: 170px;
+    margin-top: 17px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+}
+
+#LargePizzaSection #Chalkboard #Teaser #Fifth {
+    font-size: 14px;
+    text-transform: lowercase;
+    font-variant: small-caps;
+}
+
+/* button */
+#LargePizzaSection #Chalkboard #DownBtn {
+    margin-top: -45px;
+}
+
+/* rectangle with radius */
+#DownBtn a span {
+	width: 30px;
+	height: 40px;
+	border: 2px solid white;
+}
+
+/* down arrow */
+#DownBtn a span::after {
+	border-left: 2px solid white;
+	border-bottom: 2px solid white;
+}
+
+/******************** SPECIAL SECTION ********************/
+#SpecialtiesSection {
+    height: 1300px;
+}  
+
+#SpecialtiesContainer {
+    width: 500px;
+}
+
+/* header */
+#SpecialtiesContainer h1 {
+    border: 1px solid black;
+    padding-bottom: 25px;
+    box-shadow: 0.1px 4px 4px black;
+}
+
+#SpecialtiesContainer #Bord {
+    display: none;
+}
+
+#SpecialtiesContainer #Soon {
+    font-size: 25px; 
+}
+
+#SpecialtiesContainer #World {
+    display: table;
+    font-size: 35px;
+}
+
+/* icons */ 
+#SpecialtiesContainer #Icons {
+    width: 499px;
+    position: relative;
+    right: 15px;
+} 
+
+/* statement */ 
+#SpecialtiesContainer #Icons .col-md-3 #State { 
+    font-size: 20px; 
+} 
+
+#SpecialtiesContainer #Icons .col-sm-6 #MobileOne {
+    margin: auto;
+    display: table;
+}
+    
+#SpecialtiesContainer #Icons .col-md-3 h3 { 
+    width: 220px; 
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border: 3px solid black;
+} 
+ 
+#SpecialtiesContainer #Icons .col-md-3 p { 
+    width: 200px;
+    height: 185px;
+    margin-top: 20px;
+    font-size: 15px;
+    text-align: left;
+}
+
+}
+
+
+
+

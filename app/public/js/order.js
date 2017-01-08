@@ -13,13 +13,18 @@ $(document).ready(function() {
 	var pizza = {
 	  type: "",
 	  size: "",
-	  crust: "",
 	  toppings: [],
 	  toppingsLeft: [],
 	  toppingsRight: [],
 	  cooked: "",
 	  comment: ""
 	};
+	var steak = {
+		type: "",
+		cooked: "",
+		toppings: [],
+		comment: ""
+	}
 	//Current item being customized.  Used when the user clicks away to a different item
 	var currentItem;
 	//Whether or not the item has been customized, Boolean
@@ -138,13 +143,13 @@ $(document).ready(function() {
 	});
 	//Set the type of pizza selected by the user
 	$(".pizzaType").on('click', function() {
-		$('#optionsSteak').addClass('hidden');
-		$('#optionsPizza').removeClass('hidden');
+		SetOptions("#optionsPizza");
 		currentItem = $(this).get(0).attributes[3].value;
 		pizza.type = currentItem;
 		$(".thisItem").text(currentItem);
 		var defaultToppings = menu.pizza[currentItem].toppings;
 		$(".form-control").val("normal");
+		$("#comment").val("");
 		$("#numPizza").val("1");
 		$('#uniqueToppings').empty();
 		$('#regularToppings').empty();
@@ -197,12 +202,12 @@ $(document).ready(function() {
 									+			'<option value="side">Side</option>'
 									+		'</select>'
 									+   '</td>'
-								  +  '</tr>'
-				if(menu.pizza.allToppingsPrices[menu.pizza.toppings[i]] == 3.00)
+								  +  '</tr>';
+				if(menu.pizza.toppingsPrices[menu.pizza.toppings[i]] == 3.00)
 				{
 					$('#regularToppings').append(toppingHTML);
 				}
-				else if(menu.pizza.allToppingsPrices[menu.pizza.toppings[i]] == 4.00)
+				else if(menu.pizza.toppingsPrices[menu.pizza.toppings[i]] == 4.00)
 				{
 					$('#specialtyToppings').append(toppingHTML);
 				}
@@ -221,10 +226,36 @@ $(document).ready(function() {
 	});
 	//Set the type of steak selected by the user
 	$(".steakType").on('click', function() {
-		$('#optionsPizza').addClass('hidden');
-		$('#optionsSteak').removeClass('hidden');
+		SetOptions("#optionsSteak");
 		currentItem = $(this).get(0).attributes[3].value;
+		steak.type = currentItem;
 		$(".thisItem").text(currentItem);
+		var defaultToppings = menu.cheesesteak[currentItem].toppings;
+		$(".form-control").val("normal");
+		$("#commentSteak").val("");
+		$("#numSteak").val("1");
+		$('#uniqueToppingsSteak').empty();
+		$('#regularToppingsSteak').empty();
+		for(var i = 0; i < defaultToppings.length; i++)
+		{
+			var toppingHTML = '<tr>'
+								+ '<td>' + defaultToppings[i] + '</td>'
+							  +   '<td>'
+							  +    	'<label class="checkbox-inline">'
+								+    		'<input type="checkbox" class="radio" value="' + defaultToppings[i] + '" name="' + defaultToppings[i] + '" /></label>'
+								+    '</td>'
+								+   	'<td>'
+								+   		'<select class="form-control" id="amount ' + defaultToppings[i] + '">'
+								+				'<option value="normal">Normal</option>'
+								+			  '<option value="light">Light</option>'
+								+			  '<option value="extra">Extra</option>'
+								+			  '<option value="xxtra">Xxtra</option>'
+								+			  '<option value="side">Side</option>'
+								+			'</select>'
+								+   	'</td>'
+							  +  '</tr>';
+			$('#uniqueToppingsSteak').append(toppingHTML);
+		}
 	});
 	//Unchecks checkboxes in same name group if another is selected (ex. user picks left pepperoni, then changes to all)
 	$('#pizzaForm').on('click', 'input:checkbox', function() {
@@ -240,6 +271,11 @@ $(document).ready(function() {
 	  }
 	  changed = true;
 	});
+	function SetOptions(option) {
+		$('#optionsPizza').addClass('hidden');
+		$('#optionsSteak').addClass('hidden');
+		$(option).removeClass('hidden');
+	}
 	function contains(topping, array) {
     var i = array.length;
     while (i--) {
