@@ -222,7 +222,6 @@ $(document).ready(function() {
 		{
 			$(':input[value="' + defaultToppings[i] + '"][where="all"]').prop("checked", true);
 		}
-		
 	});
 	//Set the type of steak selected by the user
 	$(".steakType").on('click', function() {
@@ -276,8 +275,12 @@ $(document).ready(function() {
 									+			'</select>'
 									+   	'</td>'
 								  +  '</tr>';
-				$('#toppingsSteak').append(toppingHTML);
+				$('#regularToppingsSteak').append(toppingHTML);
 			}
+		}
+		for(var i = 0; i < defaultToppings.length; i++)
+		{
+			$(':input[value="' + defaultToppings[i] + '"]').prop("checked", true);
 		}
 	});
 	//Unchecks checkboxes in same name group if another is selected (ex. user picks left pepperoni, then changes to all)

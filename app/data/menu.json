@@ -538,5 +538,20 @@
 			"mayo": 0.00,
 			"hot sauce": 0.00
 		}
+	},
+	"pasta": {
+		"Spaghetti with Sauce": {
+			"price": [
+				3.95,
+				6.95
+			]
+		},
+		"Spaghetti with Meatballs": {
+			"price": [
+				5.95,
+				8.95
+			]
+		}
+
 	}
 }
