@@ -24,7 +24,13 @@ $(document).ready(function() {
 		cooked: "",
 		toppings: [],
 		comment: ""
-	}
+	};
+	var pasta = {
+		type: "",
+		toppings: [],
+		sauce: "",
+		comment: ""
+	};
 	//Current item being customized.  Used when the user clicks away to a different item
 	var currentItem;
 	//Whether or not the item has been customized, Boolean
@@ -149,7 +155,7 @@ $(document).ready(function() {
 		$(".thisItem").text(currentItem);
 		var defaultToppings = menu.pizza[currentItem].toppings;
 		$(".form-control").val("normal");
-		$("#comment").val("");
+		$("#commentPizza").val("");
 		$("#numPizza").val("1");
 		$('#uniqueToppings').empty();
 		$('#regularToppings').empty();
@@ -283,6 +289,80 @@ $(document).ready(function() {
 			$(':input[value="' + defaultToppings[i] + '"]').prop("checked", true);
 		}
 	});
+	$(".pastaType").on('click', function() {
+		SetOptions("#optionsPasta");
+		currentItem = $(this).get(0).attributes[3].value;
+		pasta.type = currentItem;
+		$(".thisItem").text(currentItem);
+		$('#saucePasta').empty();
+		var defaultSauce = menu.pasta[currentItem].sauce[0];
+		$(".form-control").val("normal");
+		$("#commentPasta").val("");
+		$("#numPasta").val("1");
+		$('#toppingsPasta').empty();
+		for(var i = 0; i < menu.pasta.details.length; i++)
+		{
+			var toppingHTML = '<tr>'
+							+ '<td>' + menu.pasta.details[i] + '</td>'
+						  +   '<td>'
+						  +    	'<label class="checkbox-inline">'
+							+    		'<input type="checkbox" class="radio" value="' + menu.pasta.details[i] + '" name="' + menu.pasta.details[i] + '" /></label>'
+							+    '</td>'
+							+   	'<td>'
+							+   		'<select class="form-control" id="amount ' + menu.pasta.details[i] + '">'
+							+				'<option value="normal">Normal</option>'
+							+			  '<option value="light">Light</option>'
+							+			  '<option value="extra">Extra</option>'
+							+			  '<option value="xxtra">Xxtra</option>'
+							+			  '<option value="side">Side</option>'
+							+			'</select>'
+							+   	'</td>'
+						  +  '</tr>';
+			$("#toppingsPasta").append(toppingHTML);
+		}
+		if(menu.pasta[currentItem].details.length > 0)
+		{
+			$(':input[value="' + menu.pasta[currentItem].details[0] + '"]').prop("checked", true);
+		}
+		var toppingHTML = '<tr>'
+							+ '<td>' + defaultSauce + '</td>'
+						  +   '<td>'
+						  +    	'<label class="checkbox-inline">'
+							+    		'<input type="checkbox" checked="true" class="radio" value="' + defaultSauce + '" name="' + defaultSauce + '" /></label>'
+							+    '</td>'
+							+   	'<td>'
+							+   		'<select class="form-control" id="amount ' + defaultSauce + '">'
+							+				'<option value="normal">Normal</option>'
+							+			  '<option value="light">Light</option>'
+							+			  '<option value="extra">Extra</option>'
+							+			  '<option value="xxtra">Xxtra</option>'
+							+			  '<option value="side">Side</option>'
+							+			'</select>'
+							+   	'</td>'
+						  +  '</tr>';
+		$('#saucePasta').append(toppingHTML);
+		if(menu.pasta[currentItem].sauce.length > 1)
+		{
+			var toppingHTML = '<tr>'
+							+ '<td>' + menu.pasta[currentItem].sauce[1] + '</td>'
+						  +   '<td>'
+						  +    	'<label class="checkbox-inline">'
+							+    		'<input type="checkbox" class="radio" value="' + menu.pasta[currentItem].sauce[1] + '" name="' + defaultSauce + '" /></label>'
+							+    '</td>'
+							+   	'<td>'
+							+   		'<select class="form-control" id="amount ' + menu.pasta[currentItem].sauce[1] + '">'
+							+				'<option value="normal">Normal</option>'
+							+			  '<option value="light">Light</option>'
+							+			  '<option value="extra">Extra</option>'
+							+			  '<option value="xxtra">Xxtra</option>'
+							+			  '<option value="side">Side</option>'
+							+			'</select>'
+							+   	'</td>'
+						  +  '</tr>';
+			$('#saucePasta').append(toppingHTML);
+		}
+
+	});
 	//Unchecks checkboxes in same name group if another is selected (ex. user picks left pepperoni, then changes to all)
 	$('#masterFormDiv').on('click', 'input:checkbox', function() {
 		console.log("happened");
@@ -300,6 +380,7 @@ $(document).ready(function() {
 	function SetOptions(option) {
 		$('#optionsPizza').addClass('hidden');
 		$('#optionsSteak').addClass('hidden');
+		$('#optionsPasta').addClass('hidden');
 		$(option).removeClass('hidden');
 	}
 	function contains(topping, array) {

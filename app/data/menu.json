@@ -544,14 +544,187 @@
 			"price": [
 				3.95,
 				6.95
+			],
+			"pasta": "spaghetti",
+			"sauce": ["marinara"],
+			"details": [
 			]
 		},
 		"Spaghetti with Meatballs": {
 			"price": [
 				5.95,
 				8.95
+			],
+			"pasta": "spaghetti",
+			"sauce": ["marinara"],
+			"details": [
+				"meatballs"
 			]
+		},
+		"Linguine with Pesto": {
+			"price": [
+				5.95,
+				8.95
+			],
+			"pasta": "linguine",
+			"sauce": ["pesto"],
+			"details": [
+			]
+		},
+		"Fettuccine Alfredo": {
+			"price": [
+				6.95,
+				9.95
+			],
+			"pasta": "fettuccine",
+			"sauce": ["alfredo"],
+			"details": [
+			]
+		},
+		"Fettuccine Alfredo with Chicken": {
+			"price": [
+				9.50,
+				12.50
+			],
+			"pasta": "fettuccine",
+			"sauce": ["alfredo"],
+			"details": [
+				"chicken"
+			]
+		},
+		"Penne with Vodka Sauce": {
+			"price": [
+				6.00,
+				9.00
+			],
+			"pasta": "penne",
+			"sauce": ["vodka sauce"],
+			"details": [
+			]
+		},
+		"Penne with Vodka Sauce and Chicken": {
+			"price": [
+				9.50,
+				12.50
+			],
+			"pasta": "penne",
+			"sauce": ["vodka sauce"],
+			"details": [
+				"chicken"
+			]
+		},
+		"Penne with Garlic and Oil and Sauteed Broccoli": {
+			"price": [
+				4.95,
+				7.95
+			],
+			"pasta": "penne",
+			"sauce": ["garlic and oil"],
+			"details": [
+				"broccoli"
+			]
+		},
+		"Linguine with Clam Sauce": {
+			"price": [
+				6.95,
+				9.95
+			],
+			"pasta": "linguine",
+			"sauce": [
+				"red clam sauce",
+				"white clam sauce"
+			],
+			"details": [
+			]
+		},
+		"Spaghetti with Garlic and Oil": {
+			"price": [
+				3.95,
+				6.95
+			],
+			"pasta": "spaghetti",
+			"sauce": ["garlic and oil"],
+			"details": [
+			]
+		},
+		"Linguine with Garlic and Oil": {
+			"price": [
+				3.95,
+				6.95
+			],
+			"pasta": "linguine",
+			"sauce": ["garlic and oil"],
+			"details": [
+			]
+		},
+		"Ravioli": {
+			"price": [
+				5.00,
+				8.00
+			],
+			"sauce": [
+				"marinara",
+				"alfredo"
+			],
+			"details": [
+			]
+		},
+		"Manicotti": {
+			"price": [
+				5.00,
+				8.00
+			],
+			"sauce": [
+				"marinara",
+				"alfredo"
+			],
+			"details": [
+			]
+		},
+		"Baked Ziti": {
+			"price": [
+				5.00,
+				8.00
+			],
+			"sauce": [
+			],
+			"details": [
+			]
+		},
+		"Lasagna": {
+			"price": [
+				8.95
+			],
+			"sauce": [
+			],
+			"details": [
+			]
+		},
+		"Stuffed Shells": {
+			"price": [
+				5.00,
+				8.00
+			],
+			"sauce": [
+				"marinara",
+				"alfredo"
+			],
+			"details": [
+			]
+		},
+		"details": [
+			"meatballs",
+			"sausage",
+			"chicken",
+			"broccoli",
+			"meat sauce"
+		],
+		"detailsPrices": {
+			"meatballs": 2.00,
+			"sausage": 2.00,
+			"chicken": 2.00,
+			"broccoli": 2.00,
+			"meat sauce": 2.00
 		}
-
 	}
 }

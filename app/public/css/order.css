@@ -35,7 +35,7 @@ label.checkbox-inline {
 	top: -10px;
 }
 
-.expandedMenu, #optionsPizza, #optionsSteak, #yourOrder {
+.expandedMenu, #optionsPizza, #optionsSteak, #optionsPasta, #yourOrder {
 	height: 630px;
 	overflow-y: auto;
 }

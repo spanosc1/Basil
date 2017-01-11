@@ -110,9 +110,25 @@
 							  	<li><a class="steakType" data-toggle="pill" href="#optionsSteak" value="Chicken Cheesesteak Combo"><h4>Chicken Cheesesteak Combo</h4><p>Lettuce, tomatoes, onions, & side French fries.</p></a></li>
 						  	</ul>
 						  </div>
-						  <div id="pasta" class="tab-pane fade">
-						    <h3>Pasta w/Sauce</h3>
-						    <p>Marinara.</p>
+						  <div id="pasta" class="tab-pane fade expandedMenu">
+						    <ul class="nav nav-pills nav-stacked">
+							    <li><a class="pastaType" data-toggle="pill" href="#optionsPasta" value="Spaghetti with Sauce"><h4>Spaghetti with Sauce</h4><p></p></a></li>
+							    <li><a class="pastaType" data-toggle="pill" href="#optionsPasta" value="Spaghetti with Meatballs"><h4>Spaghetti with Meatballs</h4><p></p></a></li>
+							    <li><a class="pastaType" data-toggle="pill" href="#optionsPasta" value="Linguine with Pesto"><h4>Linguine with Pesto</h4><p></p></a></li>
+							    <li><a class="pastaType" data-toggle="pill" href="#optionsPasta" value="Fettuccine Alfredo"><h4>Fettuccine Alfredo</h4><p></p></a></li>
+							    <li><a class="pastaType" data-toggle="pill" href="#optionsPasta" value="Fettuccine Alfredo with Chicken"><h4>Fettuccine Alfredo with Chicken</h4><p></p></a></li>
+							    <li><a class="pastaType" data-toggle="pill" href="#optionsPasta" value="Penne with Vodka Sauce"><h4>Penne with Vodka Sauce</h4><p></p></a></li>
+							    <li><a class="pastaType" data-toggle="pill" href="#optionsPasta" value="Penne with Vodka Sauce and Chicken"><h4>Penne with Vodka Sauce and Chicken</h4><p></p></a></li>
+							    <li><a class="pastaType" data-toggle="pill" href="#optionsPasta" value="Penne with Garlic and Oil and Sauteed Broccoli"><h4>Penne with Garlic & Oil and Sauteed Broccoli</h4><p></p></a></li>
+							    <li><a class="pastaType" data-toggle="pill" href="#optionsPasta" value="Linguine with Clam Sauce"><h4>Linguine with Clam Sauce</h4><p></p></a></li>
+							    <li><a class="pastaType" data-toggle="pill" href="#optionsPasta" value="Spaghetti with Garlic and Oil"><h4>Spaghetti with Garlic & Oil</h4><p></p></a></li>
+							    <li><a class="pastaType" data-toggle="pill" href="#optionsPasta" value="Linguine with Garlic and Oil"><h4>Linguine with Garlic & Oil</h4><p></p></a></li>
+							    <li><a class="pastaType" data-toggle="pill" href="#optionsPasta" value="Ravioli"><h4>Ravioli</h4><p>With choice of marinara sauce or alfredo sauce</p></a></li>
+							    <li><a class="pastaType" data-toggle="pill" href="#optionsPasta" value="Manicotti"><h4>Manicotti</h4><p>With choice of marinara sauce or alfredo sauce</p></a></li>
+							    <li><a class="pastaType" data-toggle="pill" href="#optionsPasta" value="Baked Ziti"><h4>Baked Ziti</h4><p></p></a></li>
+							    <li><a class="pastaType" data-toggle="pill" href="#optionsPasta" value="Lasagna"><h4>Lasagna</h4><p>with meat</p></a></li>
+							    <li><a class="pastaType" data-toggle="pill" href="#optionsPasta" value="Stuffed Shells"><h4>Stuffed Shells</h4><p>With choice of marinara sauce or alfredo sauce</p></a></li>
+							  </ul>
 						  </div>
 						  <div id="entree" class="tab-pane fade">
 						    <h3>Eggplant Parm</h3>
@@ -317,8 +333,8 @@
 														</tr>
 													</tbody>
 												</table>
-												<label for="comment">Comment:</label>
-												<textarea class="form-control" rows="5" id="comment"></textarea>
+												<label for="commentPizza">Comment:</label>
+												<textarea class="form-control" rows="5" id="commentPizza"></textarea>
 								      </div>
 								    </div>
 								  </div>
@@ -339,7 +355,7 @@
 								<button type="button" class="btn btn-primary" id="addPizzaButton">Add to Order</button>
 							</form>
 						 </div>
-						 </div>
+						 
 
 							<!--__________________________________________________________-->
 							<!--             END OF PIZZA, BEGINNING OF STEAK             -->
@@ -446,15 +462,15 @@
 														</tr>
 													</tbody>
 												</table>
-												<label for="comment">Comment:</label>
-												<textarea class="form-control" rows="5" id="comment"></textarea>
+												<label for="commentSteak">Comment:</label>
+												<textarea class="form-control" rows="5" id="commentSteak"></textarea>
 								      </div>
 								    </div>
 								  </div>
 								</div>
 								<hr>
-								<label for="numPizza">Quantity:</label>
-								<select class="form-control" id="numPizza">
+								<label for="numSteak">Quantity:</label>
+								<select class="form-control" id="numSteak">
 								  <option value="1">1</option>
 								  <option value="2">2</option>
 								  <option value="3">3</option>
@@ -468,6 +484,118 @@
 								<button type="button" class="btn btn-primary" id="addSteakButton">Add to Order</button>
 							</form>
 						 </div>
+						 <!--__________________________________________________________________-->
+						 <!--                 END OF STEAKS, BEGINNING OF PASTA                -->
+						 <!--__________________________________________________________________-->
+						 <div id="optionsPasta" class="tab-pane fade">
+						  <h4 class="thisItem"></h4>						  
+						  <form class="form-group" id="pastaForm">
+								<div id="accordion" role="tablist" aria-multiselectable="true">
+								  <div class="card">
+								    <div class="card-header" role="tab" id="headingToppingsPasta">
+								      <h5 class="mb-0">
+								        <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseToppingsPasta" aria-expanded="false" aria-controls="collapseToppingsPasta">
+								          Toppings<span class="caret"></span>
+								        </a>
+								      </h5>
+								    </div>
+								    <div id="collapseToppingsPasta" class="collapse" role="tabpanel" aria-labelledby="headingToppingsPasta">
+								      <div class="card-block">
+								        <table class="table">
+												  <thead>
+												    <tr>
+												      <th>Topping:</th>
+												      <th></th>
+												      <th>Extra</th>
+												    </tr>
+												  </thead>
+												  <tbody id="toppingsPasta">
+												    <!--PASTA TOPPINGS-->
+												  </tbody>
+												</table>
+								      </div>
+								    </div>
+								  </div>
+								  <hr>
+								  <div class="card">
+								    <div class="card-header" role="tab" id="headingSaucePasta">
+								      <h5 class="mb-0">
+								        <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseSaucePasta" aria-expanded="false" aria-controls="collapseSaucePasta">
+								          Sauce<span class="caret"></span>
+								        </a>
+								      </h5>
+								    </div>
+								    <div id="collapseSaucePasta" class="collapse" role="tabpanel" aria-labelledby="headingSaucePasta">
+								      <div class="card-block">
+								        <table class="table">
+												  <thead>
+												    <tr>
+												      <th>Sauce:</th>
+												      <th></th>
+												      <th>Extra</th>
+												    </tr>
+												  </thead>
+												  <tbody id="saucePasta">
+												    <!--PASTA SAUCE-->
+												  </tbody>
+												</table>
+								      </div>
+								    </div>
+								  </div>
+								  <hr>
+								  <div class="card">
+								    <div class="card-header" role="tab" id="headingInstructionsPasta">
+								      <h5 class="mb-0">
+								        <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseInstructionsPasta" aria-expanded="false" aria-controls="collapseInstructionsPasta">
+								          Instructions<span class="caret"></span>
+								        </a>
+								      </h5>
+								    </div>
+								    <div id="collapseInstructionsPasta" class="collapse" role="tabpanel" aria-labelledby="headingInstructionsPasta">
+								      <div class="card-block">
+								      	<table class="table">
+												  <thead>
+												    <tr>
+												      <th class="cooked">Grated Cheese</th>
+												      <th class="cooked">Melted Cheese</th>
+												    </tr>
+												  </thead>
+												  <tbody>
+												    <tr>
+												    	<td>
+												    		<label class="checkbox-inline">
+																	<input type="checkbox" class="radio" value="grated cheese" name="gratedCheese" /></label>
+												    	</td>
+												      <td>
+												      	<label class="checkbox-inline">
+																	<input type="checkbox" class="radio" value="melted cheese" name="meltedCheese" /></label>
+															</td>
+														</tr>
+													</tbody>
+												</table>
+												<label for="commentPasta">Comment:</label>
+												<textarea class="form-control" rows="5" id="commentPasta"></textarea>
+								      </div>
+								    </div>
+								  </div>
+								</div>
+								<hr>
+								<label for="numPasta">Quantity:</label>
+								<select class="form-control" id="numPasta">
+								  <option value="1">1</option>
+								  <option value="2">2</option>
+								  <option value="3">3</option>
+								  <option value="4">4</option>
+								  <option value="5">5</option>
+								  <option value="6">6</option>
+								  <option value="7">7</option>
+								  <option value="8">8</option>
+								  <option value="9">9</option>
+								</select>
+								<button type="button" class="btn btn-primary" id="addSteakButton">Add to Order</button>
+							</form>
+						 </div>
+						</div>
 					</div>
 				</div>
 			</div>
