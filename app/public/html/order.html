@@ -131,8 +131,13 @@
 							  </ul>
 						  </div>
 						  <div id="entree" class="tab-pane fade">
-						    <h3>Eggplant Parm</h3>
-						    <p>Cheese and Sauce.</p>
+						    <ul class="nav nav-pills nav-stacked">
+							    <li><a class="entreeType" data-toggle="pill" href="#optionsEntree" value="Eggplant Parmigiana"><h4>Eggplant Parmigiana</h4><p></p></a></li>
+							    <li><a class="entreeType" data-toggle="pill" href="#optionsEntree" value="Veal Parmigiana"><h4>Veal Parmigiana</h4><p></p></a></li>
+							    <li><a class="entreeType" data-toggle="pill" href="#optionsEntree" value="Shrimp Parmigiana"><h4>Shrimp Parmigiana</h4><p></p></a></li>
+							    <li><a class="entreeType" data-toggle="pill" href="#optionsEntree" value="Chicken Parmigiana"><h4>Chicken Parmigiana</h4><p></p></a></li>
+							    <li><a class="entreeType" data-toggle="pill" href="#optionsEntree" value="Chicken Francais"><h4>Chicken Francais</h4><p></p></a></li>
+							  </ul>
 						  </div>
 						  <div id="slices" class="tab-pane fade">
 						    <h3>Regular</h3>
@@ -490,6 +495,8 @@
 						 <div id="optionsPasta" class="tab-pane fade">
 						  <h4 class="thisItem"></h4>						  
 						  <form class="form-group" id="pastaForm">
+						  	<label class="radio-inline"><input type="radio" name="sizePasta" value="medium" checked="">7"</label>
+								<label class="radio-inline"><input type="radio" name="sizePasta" value="large">9"</label>
 								<div id="accordion" role="tablist" aria-multiselectable="true">
 								  <div class="card">
 								    <div class="card-header" role="tab" id="headingToppingsPasta">
@@ -592,7 +599,202 @@
 								  <option value="8">8</option>
 								  <option value="9">9</option>
 								</select>
-								<button type="button" class="btn btn-primary" id="addSteakButton">Add to Order</button>
+								<button type="button" class="btn btn-primary" id="addPastaButton">Add to Order</button>
+							</form>
+						 </div>
+						 <!--__________________________________________________________________-->
+						 <!--                 END OF PASTA, BEGINNING OF ENTREE                -->
+						 <!--__________________________________________________________________-->
+						 <div id="optionsEntree" class="tab-pane fade">
+						  <h4 class="thisItem"></h4>						  
+						  <form class="form-group" id="entreeForm">
+						  	<label class="radio-inline"><input type="radio" name="sizeEntree" value="medium" checked="">7"</label>
+								<label class="radio-inline"><input type="radio" name="sizeEntree" value="large">9"</label>
+								<div id="accordion" role="tablist" aria-multiselectable="true">
+								  <div class="card">
+								    <div class="card-header" role="tab" id="headingSide">
+								      <h5 class="mb-0">
+								        <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseSide" aria-expanded="false" aria-controls="collapseSide">
+								          Sides (choose one)<span class="caret"></span>
+								        </a>
+								      </h5>
+								    </div>
+								    <div id="collapseSide" class="collapse" role="tabpanel" aria-labelledby="headingSide">
+								      <div class="card-block">
+								        <table class="table">
+												  <thead>
+												    <tr>
+												      <th>Side:</th>
+												      <th></th>
+												    </tr>
+												  </thead>
+												  <tbody id="toppingsPasta">
+												    <tr>
+												     <td>Salad</td>
+												     <td>
+												      <label class="checkbox-inline">
+													    	<input type="checkbox" class="radio" value="salad" name="entreeSide" /></label>
+													   </td>
+													  </tr>
+													  <tr>
+													   <td>Spaghetti</td>
+												     <td>
+												      <label class="checkbox-inline">
+													    	<input type="checkbox" class="radio" value="spaghetti" name="entreeSide" /></label>
+													   </td>
+													  </tr>
+													  <tr>
+													   <td>Linguine</td>
+												     <td>
+												      <label class="checkbox-inline">
+													    	<input type="checkbox" class="radio" value="linguine" name="entreeSide" /></label>
+													   </td>
+													  </tr>
+												  </tbody>
+												</table>
+								      </div>
+								    </div>
+								  </div>
+								  <hr>
+								  <div class="card">
+								    <div class="card-header" role="tab" id="headingIngredients">
+								      <h5 class="mb-0">
+								        <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseIngredients" aria-expanded="false" aria-controls="collapseIngredients">
+								          Ingredients<span class="caret"></span>
+								        </a>
+								      </h5>
+								    </div>
+								    <div id="collapseIngredients" class="collapse" role="tabpanel" aria-labelledby="headingIngredients">
+								      <div class="card-block">
+								        <table class="table">
+												  <thead>
+												    <tr>
+												      <th>Ingredient:</th>
+												      <th></th>
+												      <th>Extra</th>
+												    </tr>
+												  </thead>
+												  <tbody id="ingredient">
+												    <!--ENTREE INGREDIENT-->
+												  </tbody>
+												</table>
+								      </div>
+								    </div>
+								  </div>
+								  <hr>
+								  <div class="card">
+								    <div class="card-header" role="tab" id="headingMeat">
+								      <h5 class="mb-0">
+								        <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseMeat" aria-expanded="false" aria-controls="collapseMeat">
+								          Meat (for Spaghetti and Linguine)<span class="caret"></span>
+								        </a>
+								      </h5>
+								    </div>
+								    <div id="collapseMeat" class="collapse" role="tabpanel" aria-labelledby="headingMeat">
+								      <div class="card-block">
+								        <table class="table">
+												  <thead>
+												    <tr>
+												      <th>Meat:</th>
+												      <th></th>
+												      <th>Extra</th>
+												    </tr>
+												  </thead>
+												  <tbody id="ingredient">
+												    <tr>
+												     <td>Meatball</td>
+												     <td>
+												      	<label class="checkbox-inline">
+													    		<input type="checkbox" class="radio" value="meatball" name="meatball" /></label>
+													    </td>
+													   	<td>
+													   		<select class="form-control" id="amount meatball">
+																	<option value="normal">Normal</option>
+																  <option value="light">Light</option>
+																  <option value="extra">Extra</option>
+																  <option value="xxtra">Xxtra</option>
+																  <option value="side">Side</option>
+																</select>
+													   	</td>
+												    </tr>
+												    <tr>
+												     <td>Sausage</td>
+												     <td>
+												      	<label class="checkbox-inline">
+													    		<input type="checkbox" class="radio" value="sausage" name="sausage" /></label>
+													    </td>
+													   	<td>
+													   		<select class="form-control" id="amount sausage">
+																	<option value="normal">Normal</option>
+																  <option value="light">Light</option>
+																  <option value="extra">Extra</option>
+																  <option value="xxtra">Xxtra</option>
+																  <option value="side">Side</option>
+																</select>
+													   	</td>
+												    </tr>
+												  </tbody>
+												</table>
+								      </div>
+								    </div>
+								  </div>
+								  <hr>
+								  <div class="card">
+								    <div class="card-header" role="tab" id="headingDressing">
+								      <h5 class="mb-0">
+								        <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseDressing" aria-expanded="false" aria-controls="collapseDressing">
+								          Dressing (for Salad)<span class="caret"></span>
+								        </a>
+								      </h5>
+								    </div>
+								    <div id="collapseDressing" class="collapse" role="tabpanel" aria-labelledby="headingDressing">
+								      <div class="card-block">
+								        <table class="table">
+												  <thead>
+												    <tr>
+												      <th>Dressing:</th>
+												      <th></th>
+												      <th>Extra</th>
+												    </tr>
+												  </thead>
+												  <tbody id="dressing">
+												    <!--ENTREE INGREDIENT-->
+												  </tbody>
+												</table>
+								      </div>
+								    </div>
+								  </div>
+								  <hr>
+								  <div class="card">
+								    <div class="card-header" role="tab" id="headingInstructionsEntree">
+								      <h5 class="mb-0">
+								        <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseInstructionsEntree" aria-expanded="false" aria-controls="collapseInstructionsEntree">
+								          Instructions<span class="caret"></span>
+								        </a>
+								      </h5>
+								    </div>
+								    <div id="collapseInstructionsEntree" class="collapse" role="tabpanel" aria-labelledby="headingInstructionsEntree">
+								      <div class="card-block">
+												<label for="commentEntree">Comment:</label>
+												<textarea class="form-control" rows="5" id="commentEntree"></textarea>
+								      </div>
+								    </div>
+								  </div>
+								</div>
+								<hr>
+								<label for="numEntree">Quantity:</label>
+								<select class="form-control" id="numEntree">
+								  <option value="1">1</option>
+								  <option value="2">2</option>
+								  <option value="3">3</option>
+								  <option value="4">4</option>
+								  <option value="5">5</option>
+								  <option value="6">6</option>
+								  <option value="7">7</option>
+								  <option value="8">8</option>
+								  <option value="9">9</option>
+								</select>
+								<button type="button" class="btn btn-primary" id="addEntreeButton">Add to Order</button>
 							</form>
 						 </div>
 						</div>

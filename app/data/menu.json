@@ -726,5 +726,75 @@
 			"broccoli": 2.00,
 			"meat sauce": 2.00
 		}
+	},
+	"entrees": {
+		"Eggplant Parmigiana": {
+			"price": [
+				7.95,
+				10.95
+			],
+			"ingredients": [
+				"cheese",
+				"sauce"
+			]
+		},
+		"Veal Parmigiana": {
+			"price": [
+				10.95,
+				13.95
+			],
+			"ingredients": [
+				"cheese",
+				"sauce"
+			]
+		},
+		"Shrimp Parmigiana": {
+			"price": [
+				11.95,
+				14.95
+			],
+			"ingredients": [
+				"cheese",
+				"sauce"
+			]
+		},
+		"Chicken Parmigiana": {
+			"price": [
+				8.95,
+				11.95
+			],
+			"ingredients": [
+				"cheese",
+				"sauce"
+			]
+		},
+		"Chicken Francais": {
+			"price": [
+				9.95,
+				12.95
+			],
+			"ingredients": [
+				"cheese",
+				"sauce"
+			]
+		},
+		"meat": [
+			"meatball",
+			"sausage"
+		],
+		"dressing": [
+			"italian dressing",
+			"french dressing",
+			"russian dressing",
+			"ranch dressing",
+			"honey mustard",
+			"balsamic vinaigrette",
+			"caesar",
+			"blue cheese dressing"
+		],
+		"meatPrice": {
+			"meatball": 2.00,
+			"sausage": 2.00
+		}
 	}
 }

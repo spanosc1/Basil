@@ -31,6 +31,11 @@ $(document).ready(function() {
 		sauce: "",
 		comment: ""
 	};
+	var entree = {
+		type: "",
+		side: "",
+		sideExtra: [],
+	}
 	//Current item being customized.  Used when the user clicks away to a different item
 	var currentItem;
 	//Whether or not the item has been customized, Boolean
@@ -324,23 +329,26 @@ $(document).ready(function() {
 		{
 			$(':input[value="' + menu.pasta[currentItem].details[0] + '"]').prop("checked", true);
 		}
-		var toppingHTML = '<tr>'
-							+ '<td>' + defaultSauce + '</td>'
-						  +   '<td>'
-						  +    	'<label class="checkbox-inline">'
-							+    		'<input type="checkbox" checked="true" class="radio" value="' + defaultSauce + '" name="' + defaultSauce + '" /></label>'
-							+    '</td>'
-							+   	'<td>'
-							+   		'<select class="form-control" id="amount ' + defaultSauce + '">'
-							+				'<option value="normal">Normal</option>'
-							+			  '<option value="light">Light</option>'
-							+			  '<option value="extra">Extra</option>'
-							+			  '<option value="xxtra">Xxtra</option>'
-							+			  '<option value="side">Side</option>'
-							+			'</select>'
-							+   	'</td>'
-						  +  '</tr>';
-		$('#saucePasta').append(toppingHTML);
+		if(defaultSauce)
+		{
+			var toppingHTML = '<tr>'
+								+ '<td>' + defaultSauce + '</td>'
+							  +   '<td>'
+							  +    	'<label class="checkbox-inline">'
+								+    		'<input type="checkbox" checked="true" class="radio" value="' + defaultSauce + '" name="' + defaultSauce + '" /></label>'
+								+    '</td>'
+								+   	'<td>'
+								+   		'<select class="form-control" id="amount ' + defaultSauce + '">'
+								+				'<option value="normal">Normal</option>'
+								+			  '<option value="light">Light</option>'
+								+			  '<option value="extra">Extra</option>'
+								+			  '<option value="xxtra">Xxtra</option>'
+								+			  '<option value="side">Side</option>'
+								+			'</select>'
+								+   	'</td>'
+							  +  '</tr>';
+			$('#saucePasta').append(toppingHTML);
+		}
 		if(menu.pasta[currentItem].sauce.length > 1)
 		{
 			var toppingHTML = '<tr>'
@@ -361,7 +369,78 @@ $(document).ready(function() {
 						  +  '</tr>';
 			$('#saucePasta').append(toppingHTML);
 		}
-
+	});
+	$(".entreeType").on('click', function() {
+		SetOptions("#optionsEntree");
+		currentItem = $(this).get(0).attributes[3].value;
+		console.log(currentItem);
+		entree.type = currentItem;
+		$(".thisItem").text(currentItem);
+		$("#ingredient").empty();
+		$("#dressing").empty();
+		$(".form-control").val("normal");
+		$("#commentEntree").val("");
+		$("#numEntree").val("1");
+		for(var i = 0; i < menu.entrees[currentItem].ingredients.length; i++)
+		{
+			var toppingHTML = '<tr>'
+								+ '<td>' + menu.entrees[currentItem].ingredients[i] + '</td>'
+							  +   '<td>'
+							  +    	'<label class="checkbox-inline">'
+								+    		'<input type="checkbox" class="radio" checked="true" value="' + menu.entrees[currentItem].ingredients[i] + '" name="' + menu.entrees[currentItem].ingredients[i] + '" /></label>'
+								+    '</td>'
+								+   	'<td>'
+								+   		'<select class="form-control" id="amount ' + menu.entrees[currentItem].ingredients[i] + '">'
+								+				'<option value="normal">Normal</option>'
+								+			  '<option value="light">Light</option>'
+								+			  '<option value="extra">Extra</option>'
+								+			  '<option value="xxtra">Xxtra</option>'
+								+			  '<option value="side">Side</option>'
+								+			'</select>'
+								+   	'</td>'
+							  +  '</tr>';
+			$('#ingredient').append(toppingHTML);
+		}
+		for(var i = 0; i < menu.entrees.meat.length; i++)
+		{
+			var toppingHTML = '<tr>'
+								+ '<td>' + menu.entrees[currentItem].ingredients[i] + '</td>'
+							  +   '<td>'
+							  +    	'<label class="checkbox-inline">'
+								+    		'<input type="checkbox" class="radio" checked="true" value="' + menu.entrees[currentItem].ingredients[i] + '" name="' + menu.entrees[currentItem].ingredients[i] + '" /></label>'
+								+    '</td>'
+								+   	'<td>'
+								+   		'<select class="form-control" id="amount ' + menu.entrees[currentItem].ingredients[i] + '">'
+								+				'<option value="normal">Normal</option>'
+								+			  '<option value="light">Light</option>'
+								+			  '<option value="extra">Extra</option>'
+								+			  '<option value="xxtra">Xxtra</option>'
+								+			  '<option value="side">Side</option>'
+								+			'</select>'
+								+   	'</td>'
+							  +  '</tr>';
+			$('#ingredientMeat').append(toppingHTML);
+		}
+		for(var i = 0; i < menu.entrees.dressing.length; i++)
+		{
+			var toppingHTML = '<tr>'
+								+ '<td>' + menu.entrees.dressing[i] + '</td>'
+							  +   '<td>'
+							  +    	'<label class="checkbox-inline">'
+								+    		'<input type="checkbox" class="radio" value="' + menu.entrees.dressing[i] + '" name="' + menu.entrees.dressing[i] + '" /></label>'
+								+    '</td>'
+								+   	'<td>'
+								+   		'<select class="form-control" id="amount ' + menu.entrees.dressing[i] + '">'
+								+				'<option value="normal">Normal</option>'
+								+			  '<option value="light">Light</option>'
+								+			  '<option value="extra">Extra</option>'
+								+			  '<option value="xxtra">Xxtra</option>'
+								+			  '<option value="side">Side</option>'
+								+			'</select>'
+								+   	'</td>'
+							  +  '</tr>';
+			$('#dressing').append(toppingHTML);
+		}
 	});
 	//Unchecks checkboxes in same name group if another is selected (ex. user picks left pepperoni, then changes to all)
 	$('#masterFormDiv').on('click', 'input:checkbox', function() {
@@ -381,6 +460,7 @@ $(document).ready(function() {
 		$('#optionsPizza').addClass('hidden');
 		$('#optionsSteak').addClass('hidden');
 		$('#optionsPasta').addClass('hidden');
+		$('#optionsEntree').addClass('hidden');
 		$(option).removeClass('hidden');
 	}
 	function contains(topping, array) {
